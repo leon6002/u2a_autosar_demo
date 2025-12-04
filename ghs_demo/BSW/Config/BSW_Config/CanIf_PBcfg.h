@@ -18,8 +18,8 @@
  *  @MCU                : R7F702300
  *  @file               : CanIf_PBcfg.h
  *  @license            : Evaliation
- *  @licenseExpiryDate  :
- *  @date               : 2025-06-19 15:11:25
+ *  @licenseExpiryDate  : 2026-02-24 16:39:31
+ *  @date               : 2025-12-04 23:30:58
  *  @customer           : EasyXMen User
  *  @toolVersion        : 2.2.0.1
  *********************************************************************************************************************/
@@ -55,7 +55,7 @@
 #define CANIF_RXPDU_CAN0_Rx_0x5xx_NM_ECU           9u
 /* PRQA S 0791 -- */ /* MISRA Rule 5.4 */
 /* PRQA S 0791 ++ */ /* MISRA Rule 5.4 */
-#define CANIF_TXPDU_NUMBER                          9u
+#define CANIF_TXPDU_NUMBER                          10u
 #define CANIF_DYNAMIC_TXPDU_NUMBER                  0u
 #define CANIF_TXPDU_CAN0_Tx_0x351_Cyclic_PN29       0u
 #define CANIF_TXPDU_CAN0_Tx_0x350_Cyclic_PN17       1u
@@ -66,6 +66,7 @@
 #define CANIF_TXPDU_CAN0_Tx_0x709_Diag_Phy_Response 6u
 #define CANIF_TXPDU_CAN0_Tx_0x501_NM_ECU            7u
 #define CANIF_TXPDU_CAN0_Tx_0x360_E2E_P01           8u
+#define CANIF_TXPDU_CAN0_Tx_0x304_Cyclic_Counter    9u
 /* PRQA S 0791 -- */ /* MISRA Rule 5.4 */
 
 #define CANIF_HRH_NUMBER 4u
@@ -74,7 +75,7 @@
 #define CANIF_HOH0_HRH_2 2u
 #define CANIF_HOH0_HRH_3 3u
 
-#define CANIF_HTH_NUMBER 9u
+#define CANIF_HTH_NUMBER 10u
 #define CANIF_HOH0_HTH_0 0u
 #define CANIF_HOH0_HTH_1 1u
 #define CANIF_HOH0_HTH_2 2u
@@ -84,6 +85,7 @@
 #define CANIF_HOH0_HTH_6 6u
 #define CANIF_HOH0_HTH_7 7u
 #define CANIF_HOH0_HTH_8 8u
+#define CANIF_HOH0_HTH_9 9u
 
 #define CANIF_TXBUFFER_NUMBER 1u
 #define CANIF_RXBUFFER_NUMBER 0u

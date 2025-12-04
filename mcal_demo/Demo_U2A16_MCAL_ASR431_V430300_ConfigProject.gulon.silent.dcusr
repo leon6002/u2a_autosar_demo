@@ -13,13 +13,24 @@
         <Settings Name="com.vector.cfg.gui.app.dvcfg.views.validation.validationview.hidewarn">
             <Setting Value="false" Name="buttonStateWarn"/>
         </Settings>
-        <Settings Name="com.vector.cfg.gui.app.views.validation.table.ValidationViewTable"/>
+        <Settings Name="com.vector.cfg.gui.app.views.validation.table.ValidationViewTable">
+            <Setting Value="0,1,2," Name="nattable.BODY.columnIndexOrder"/>
+            <Setting Value="0" Name="nattable.BODY.columnWidth.defaultMinSize"/>
+            <Setting Value="false" Name="nattable.BODY.columnWidth.distributeRemainingSpace"/>
+            <Setting Value="0:250,1:500,2:250," Name="nattable.BODY.columnWidth.sizes"/>
+            <Setting Value="0" Name="nattable.COLUMN_HEADER.columnWidth.defaultMinSize"/>
+            <Setting Value="false" Name="nattable.COLUMN_HEADER.columnWidth.distributeRemainingSpace"/>
+            <Setting Value="0" Name="nattable.CORNER.columnWidth.defaultMinSize"/>
+            <Setting Value="false" Name="nattable.CORNER.columnWidth.distributeRemainingSpace"/>
+            <Setting Value="0" Name="nattable.ROW_HEADER.columnWidth.defaultMinSize"/>
+            <Setting Value="false" Name="nattable.ROW_HEADER.columnWidth.distributeRemainingSpace"/>
+        </Settings>
         <Settings Name="com.vector.cfg.gui.danglingreference.view.DanglingReferencesView"/>
         <Settings Name="com.vector.cfg.gui.gce.internal.GCETable.Renesas.EcucDefs_Can.Can.CanConfigSet.CanHardwareObject">
             <Setting Value="0,1,2,3,4,5,6,7,8,9,10,11,12,13," Name="nattable.BODY.columnIndexOrder"/>
             <Setting Value="0" Name="nattable.BODY.columnWidth.defaultMinSize"/>
             <Setting Value="false" Name="nattable.BODY.columnWidth.distributeRemainingSpace"/>
-            <Setting Value="0:21,1:358,2:144,3:137,4:110,5:207,6:136,7:93,8:206,9:148,10:90,11:167,12:107,13:173," Name="nattable.BODY.columnWidth.sizes"/>
+            <Setting Value="0:21,1:358,2:144,3:136,4:109,5:206,6:135,7:93,8:205,9:148,10:89,11:166,12:106,13:172," Name="nattable.BODY.columnWidth.sizes"/>
             <Setting Value="0" Name="nattable.COLUMN_HEADER.columnWidth.defaultMinSize"/>
             <Setting Value="false" Name="nattable.COLUMN_HEADER.columnWidth.distributeRemainingSpace"/>
             <Setting Value="0" Name="nattable.CORNER.columnWidth.defaultMinSize"/>

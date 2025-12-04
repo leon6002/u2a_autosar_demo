@@ -18,8 +18,8 @@
  *  @MCU                : R7F702300
  *  @file               : Com_Cfg.h
  *  @license            : Evaliation
- *  @licenseExpiryDate  :
- *  @date               : 2025-06-19 15:11:27
+ *  @licenseExpiryDate  : 2026-02-24 16:39:31
+ *  @date               : 2025-12-04 23:31:01
  *  @customer           : EasyXMen User
  *  @toolVersion        : 2.2.0.1
  *********************************************************************************************************************/
@@ -71,7 +71,7 @@
 
 #define COM_RXIPDUGROUP_NUMBER 7u
 
-#define COM_TXIPDUGROUP_NUMBER 7u
+#define COM_TXIPDUGROUP_NUMBER 8u
 
 #define COM_IPDUGROUP_NUMBER 6u
 
@@ -79,9 +79,9 @@
 
 #define COM_RXIPDU_COUNTER_NUMBER 1u
 
-#define COM_TXIPDU_COUNTER_NUMBER 1u
+#define COM_TXIPDU_COUNTER_NUMBER 2u
 
-#define COM_TX_MODE_TRUE_PERIOD_NUMBER 5u
+#define COM_TX_MODE_TRUE_PERIOD_NUMBER 6u
 
 #define COM_TX_MODE_FALSE_PERIOD_NUMBER 0u
 
@@ -182,7 +182,7 @@
 #define COM_RXPDU_COM_CAN0_Rx_0x260_E2E_P01        7u /* 7 IPDU_COM_CAN0_Rx_0x260_E2E_P01 */
 /* PRQA S 0791 -- */                                  /* MISRA Rule 5.4 */
 
-#define COM_TXIPDU_NUMBER 7u
+#define COM_TXIPDU_NUMBER 8u
 
 /* ComIPduHandleId of TXPDU */
 /* PRQA S 0791 ++ */                                   /* MISRA Rule 5.4 */
@@ -193,6 +193,7 @@
 #define COM_TXPDU_COM_CAN0_Tx_0x302_Mixed          12u /* 4 IPDU_COM_CAN0_Tx_0x302_Mixed */
 #define COM_TXPDU_COM_CAN0_Tx_0x303_Cyclic_Counter 13u /* 5 IPDU_COM_CAN0_Tx_0x303_Cyclic_Counter */
 #define COM_TXPDU_COM_CAN0_Tx_0x360_E2E_P01        14u /* 6 IPDU_COM_CAN0_Tx_0x360_E2E_P01 */
+#define COM_TXPDU_COM_CAN0_Tx_0x304_Cyclic_Counter 15u /* 7 IPDU_COM_CAN0_Tx_0x304_Cyclic_Counter */
 /* PRQA S 0791 -- */                                   /* MISRA Rule 5.4 */
 
 #define COM_TXSIGNALGROUP_NUMBER                        1u
@@ -200,7 +201,7 @@
 #define COM_RXSIGNALGROUP_NUMBER                        1u
 #define Rx_0x260_E2E_P01_IPDU_COM_CAN0_Rx_0x260_E2E_P01 0u
 
-#define COM_TXSIGNAL_NUMBER 21u
+#define COM_TXSIGNAL_NUMBER 25u
 /* PRQA S 0791 ++ */ /* MISRA Rule 5.4 */
 #define CAN0_Tx_0x351_Cyclic_PN29_Sig_IPDU_COM_CAN0_Tx_0x351_Cyclic_PN29 0u
 #define CAN0_Tx_0x350_Cyclic_PN17_Sig_IPDU_COM_CAN0_Tx_0x350_Cyclic_PN17 1u
@@ -223,6 +224,10 @@
 #define CAN0_Tx_0x303_Sig_3_U16_IPDU_COM_CAN0_Tx_0x303_Cyclic_Counter    18u
 #define CAN0_Tx_0x303_Sig_2_U8_IPDU_COM_CAN0_Tx_0x303_Cyclic_Counter     19u
 #define CAN0_Tx_0x303_Sig_1_U4_IPDU_COM_CAN0_Tx_0x303_Cyclic_Counter     20u
+#define CAN0_Tx_0x304_Sig_4_U32_IPDU_COM_CAN0_Tx_0x304_Cyclic_Counter    21u
+#define CAN0_Tx_0x304_Sig_3_U16_IPDU_COM_CAN0_Tx_0x304_Cyclic_Counter    22u
+#define CAN0_Tx_0x304_Sig_2_U8_IPDU_COM_CAN0_Tx_0x304_Cyclic_Counter     23u
+#define CAN0_Tx_0x304_Sig_1_U4_IPDU_COM_CAN0_Tx_0x304_Cyclic_Counter     24u
 /* PRQA S 0791 -- */ /* MISRA Rule 5.4 */
 
 #define COM_RXSIGNAL_NUMBER 22u
@@ -255,16 +260,16 @@
 
 #define COM_TXGROUPSIGNAL_NUMBER 10u
 /* PRQA S 0791 ++ */ /* MISRA Rule 5.4 */
-#define Tx_0x360_E2E_P01_IPDU_COM_CAN0_Tx_0x360_E2E_P01_CAN0_Tx_0x360_Sig_8_U8_IPDU_COM_CAN0_Tx_0x360_E2E_P01  21u
-#define Tx_0x360_E2E_P01_IPDU_COM_CAN0_Tx_0x360_E2E_P01_CAN0_Tx_0x360_Sig_7_U5_IPDU_COM_CAN0_Tx_0x360_E2E_P01  22u
-#define Tx_0x360_E2E_P01_IPDU_COM_CAN0_Tx_0x360_E2E_P01_CAN0_Tx_0x360_Sig_6_U2_IPDU_COM_CAN0_Tx_0x360_E2E_P01  23u
-#define Tx_0x360_E2E_P01_IPDU_COM_CAN0_Tx_0x360_E2E_P01_CAN0_Tx_0x360_Sig_5_U16_IPDU_COM_CAN0_Tx_0x360_E2E_P01 24u
-#define Tx_0x360_E2E_P01_IPDU_COM_CAN0_Tx_0x360_E2E_P01_CAN0_Tx_0x360_Sig_4_U8_IPDU_COM_CAN0_Tx_0x360_E2E_P01  25u
-#define Tx_0x360_E2E_P01_IPDU_COM_CAN0_Tx_0x360_E2E_P01_CAN0_Tx_0x360_Sig_2_U3_IPDU_COM_CAN0_Tx_0x360_E2E_P01  26u
-#define Tx_0x360_E2E_P01_IPDU_COM_CAN0_Tx_0x360_E2E_P01_CAN0_Tx_0x360_Sig_3_U4_IPDU_COM_CAN0_Tx_0x360_E2E_P01  27u
-#define Tx_0x360_E2E_P01_IPDU_COM_CAN0_Tx_0x360_E2E_P01_CAN0_Tx_0x360_Sig_1_U1_IPDU_COM_CAN0_Tx_0x360_E2E_P01  28u
-#define Tx_0x360_E2E_P01_IPDU_COM_CAN0_Tx_0x360_E2E_P01_CAN0_Tx_0x360_Counter_IPDU_COM_CAN0_Tx_0x360_E2E_P01   29u
-#define Tx_0x360_E2E_P01_IPDU_COM_CAN0_Tx_0x360_E2E_P01_CAN0_Tx_0x360_CRC_IPDU_COM_CAN0_Tx_0x360_E2E_P01       30u
+#define Tx_0x360_E2E_P01_IPDU_COM_CAN0_Tx_0x360_E2E_P01_CAN0_Tx_0x360_Sig_8_U8_IPDU_COM_CAN0_Tx_0x360_E2E_P01  25u
+#define Tx_0x360_E2E_P01_IPDU_COM_CAN0_Tx_0x360_E2E_P01_CAN0_Tx_0x360_Sig_7_U5_IPDU_COM_CAN0_Tx_0x360_E2E_P01  26u
+#define Tx_0x360_E2E_P01_IPDU_COM_CAN0_Tx_0x360_E2E_P01_CAN0_Tx_0x360_Sig_6_U2_IPDU_COM_CAN0_Tx_0x360_E2E_P01  27u
+#define Tx_0x360_E2E_P01_IPDU_COM_CAN0_Tx_0x360_E2E_P01_CAN0_Tx_0x360_Sig_5_U16_IPDU_COM_CAN0_Tx_0x360_E2E_P01 28u
+#define Tx_0x360_E2E_P01_IPDU_COM_CAN0_Tx_0x360_E2E_P01_CAN0_Tx_0x360_Sig_4_U8_IPDU_COM_CAN0_Tx_0x360_E2E_P01  29u
+#define Tx_0x360_E2E_P01_IPDU_COM_CAN0_Tx_0x360_E2E_P01_CAN0_Tx_0x360_Sig_2_U3_IPDU_COM_CAN0_Tx_0x360_E2E_P01  30u
+#define Tx_0x360_E2E_P01_IPDU_COM_CAN0_Tx_0x360_E2E_P01_CAN0_Tx_0x360_Sig_3_U4_IPDU_COM_CAN0_Tx_0x360_E2E_P01  31u
+#define Tx_0x360_E2E_P01_IPDU_COM_CAN0_Tx_0x360_E2E_P01_CAN0_Tx_0x360_Sig_1_U1_IPDU_COM_CAN0_Tx_0x360_E2E_P01  32u
+#define Tx_0x360_E2E_P01_IPDU_COM_CAN0_Tx_0x360_E2E_P01_CAN0_Tx_0x360_Counter_IPDU_COM_CAN0_Tx_0x360_E2E_P01   33u
+#define Tx_0x360_E2E_P01_IPDU_COM_CAN0_Tx_0x360_E2E_P01_CAN0_Tx_0x360_CRC_IPDU_COM_CAN0_Tx_0x360_E2E_P01       34u
 #define COM_RXGROUPSIGNAL_NUMBER                                                                               10u
 #define Rx_0x260_E2E_P01_IPDU_COM_CAN0_Rx_0x260_E2E_P01_CAN0_Rx_0x260_Sig_8_U8_IPDU_COM_CAN0_Rx_0x260_E2E_P01  22u
 #define Rx_0x260_E2E_P01_IPDU_COM_CAN0_Rx_0x260_E2E_P01_CAN0_Rx_0x260_Sig_7_U5_IPDU_COM_CAN0_Rx_0x260_E2E_P01  23u

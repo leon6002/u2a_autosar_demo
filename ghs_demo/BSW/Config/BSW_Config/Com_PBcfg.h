@@ -18,8 +18,8 @@
  *  @MCU                : R7F702300
  *  @file               : Com_PBcfg.h
  *  @license            : Evaliation
- *  @licenseExpiryDate  :
- *  @date               : 2025-06-19 15:11:27
+ *  @licenseExpiryDate  : 2026-02-24 16:39:31
+ *  @date               : 2025-12-04 23:31:01
  *  @customer           : EasyXMen User
  *  @toolVersion        : 2.2.0.1
  *********************************************************************************************************************/
@@ -55,24 +55,24 @@
 *******************************************************************************/
 
 #define COM_RXIPDUBUFF_SIZE 62u
-#define COM_TXIPDUBUFF_SIZE 56u
+#define COM_TXIPDUBUFF_SIZE 64u
 
 #define COM_SIGNAL_BOOLBUFF_SIZE        6u
 #define COM_RXGROUPSIGNAL_BOOLBUFF_SIZE 1u
 #define COM_SIGNAL_BOOL_INVALID_SIZE    0u
 #define COM_SIGNAL_BOOL_SUBSTITUTE_SIZE 0u
 
-#define COM_SIGNAL_8BITBUFF_SIZE        48u
+#define COM_SIGNAL_8BITBUFF_SIZE        50u
 #define COM_RXGROUPSIGNAL_8BITBUFF_SIZE 8u
 #define COM_SIGNAL_8BIT_INVALID_SIZE    1u
 #define COM_SIGNAL_8BIT_SUBSTITUTE_SIZE 0u
 
-#define COM_SIGNAL_16BITBUFF_SIZE        14u
+#define COM_SIGNAL_16BITBUFF_SIZE        15u
 #define COM_RXGROUPSIGNAL_16BITBUFF_SIZE 1u
 #define COM_SIGNAL_16BIT_INVALID_SIZE    0u
 #define COM_SIGNAL_16BIT_SUBSTITUTE_SIZE 0u
 
-#define COM_SIGNAL_32BITBUFF_SIZE        6u
+#define COM_SIGNAL_32BITBUFF_SIZE        7u
 #define COM_RXGROUPSIGNAL_32BITBUFF_SIZE 0u
 #define COM_SIGNAL_32BIT_INVALID_SIZE    0u
 #define COM_SIGNAL_32BIT_SUBSTITUTE_SIZE 0u

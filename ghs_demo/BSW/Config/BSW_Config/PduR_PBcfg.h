@@ -18,8 +18,8 @@
  *  @MCU                : R7F702300
  *  @file               : PduR_PBcfg.h
  *  @license            : Evaliation
- *  @licenseExpiryDate  :
- *  @date               : 2025-06-19 15:11:38
+ *  @licenseExpiryDate  : 2026-02-24 16:39:31
+ *  @date               : 2025-12-04 23:31:10
  *  @customer           : EasyXMen User
  *  @toolVersion        : 2.2.0.1
  *********************************************************************************************************************/
@@ -44,7 +44,7 @@
 /*******************************************************************************
 **                      Macros                                                **
 *******************************************************************************/
-#define PDUR_SRC_PDU_SUM 18u
+#define PDUR_SRC_PDU_SUM 19u
 
 #define PDUR_SRCPDU_CANTP_CAN0_Rx_0x708_Diag_Phy_Request 0u
 #define PDUR_SRCPDU_DCM_CAN0_Tx_0x709_Diag_Phy_Response  1u
@@ -64,8 +64,9 @@
 #define PDUR_SRCPDU_COM_CAN0_Tx_0x301_Event              15u
 #define PDUR_SRCPDU_COM_CAN0_Tx_0x302_Mixed              16u
 #define PDUR_SRCPDU_COM_CAN0_Tx_0x303_Cyclic_Counter     17u
+#define PDUR_SRCPDU_COM_CAN0_Tx_0x304_Cyclic_Counter     18u
 
-#define PDUR_DEST_PDU_SUM 18u
+#define PDUR_DEST_PDU_SUM 19u
 
 #define PDUR_DESTPDU_DCM_CAN0_Rx_0x708_Diag_Phy_Request    0u
 #define PDUR_DESTPDU_CANTP_CAN0_Tx_0x709_Diag_Phy_Response 1u
@@ -85,6 +86,7 @@
 #define PDUR_DESTPDU_CAN0_Tx_0x301_Event                   15u
 #define PDUR_DESTPDU_CAN0_Tx_0x302_Mixed                   16u
 #define PDUR_DESTPDU_CAN0_Tx_0x303_Cyclic_Counter          17u
+#define PDUR_DESTPDU_CAN0_Tx_0x304_Cyclic_Counter          18u
 
 #define PDUR_ROUTING_PATH_GROUP_SUM 0u
 

@@ -18,8 +18,8 @@
  *  @MCU                : R7F702300
  *  @file               : CanIf_PBcfg.c
  *  @license            : Evaliation
- *  @licenseExpiryDate  :
- *  @date               : 2025-06-19 15:11:25
+ *  @licenseExpiryDate  : 2026-02-24 16:39:31
+ *  @date               : 2025-12-04 23:30:58
  *  @customer           : EasyXMen User
  *  @toolVersion        : 2.2.0.1
  *********************************************************************************************************************/
@@ -154,6 +154,11 @@ static CONST(CanIfHthCfgType, CANIF_PBCFG_CONST) CanIf_HthCfgData[CANIF_HTH_NUMB
     {
         CANIF_CANDRV_0_CANIF_CTR_DRV_CanController_0,
         10u,
+        CANIF_FULL_CAN,
+    },
+    {
+        CANIF_CANDRV_0_CANIF_CTR_DRV_CanController_0,
+        13u,
         CANIF_FULL_CAN,
     },
 };
@@ -508,6 +513,24 @@ static CONST(CanIf_TxPduConfigType, CANIF_PBCFG_CONST) CanIf_TxPduConfigData[CAN
         CANIF_PDUID_TYPE_INVALID,
 
         0x360u,
+        0x7ffu,
+        CANIF_TX_STANDARD_CAN,
+        CANID_STATIC,
+    },
+    {
+        /* 9  CANIF_TXPDU_CAN0_Tx_0x304_Cyclic_Counter */
+
+        FALSE,
+        8u,
+
+        2u,
+        CANIF_HOH0_HTH_9,
+        PDUR_DESTPDU_CAN0_Tx_0x304_Cyclic_Counter,
+        CANIF_PDUID_TYPE_INVALID,
+
+        CANIF_PDUID_TYPE_INVALID,
+
+        0x304u,
         0x7ffu,
         CANIF_TX_STANDARD_CAN,
         CANID_STATIC,
