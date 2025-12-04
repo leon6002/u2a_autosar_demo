@@ -126,7 +126,7 @@
                     <Setting Value="$(DpaProjectFolder)\scripts" Name="WorkingDir"/>
                 </Settings>
                 <Settings Name="Generate code for Fls">
-                    <Setting Value="true" Name="Active"/>
+                    <Setting Value="false" Name="Active"/>
                     <Setting Value="$(DpaProjectFolder)\scripts\CodeGenerator.bat" Name="CommandLine"/>
                     <Setting Value="UTF-8" Name="CommandLineEncoding"/>
                     <Setting Value="" Name="Comment"/>
@@ -143,7 +143,7 @@
                     <Setting Value="$(DpaProjectFolder)\scripts" Name="WorkingDir"/>
                 </Settings>
                 <Settings Name="Generate code for Gpt">
-                    <Setting Value="true" Name="Active"/>
+                    <Setting Value="false" Name="Active"/>
                     <Setting Value="$(DpaProjectFolder)\scripts\CodeGenerator.bat" Name="CommandLine"/>
                     <Setting Value="UTF-8" Name="CommandLineEncoding"/>
                     <Setting Value="" Name="Comment"/>
@@ -194,7 +194,7 @@
                     <Setting Value="$(DpaProjectFolder)\scripts" Name="WorkingDir"/>
                 </Settings>
                 <Settings Name="Generate code for Mcu">
-                    <Setting Value="true" Name="Active"/>
+                    <Setting Value="false" Name="Active"/>
                     <Setting Value="$(DpaProjectFolder)\scripts\CodeGenerator.bat" Name="CommandLine"/>
                     <Setting Value="UTF-8" Name="CommandLineEncoding"/>
                     <Setting Value="" Name="Comment"/>
@@ -211,7 +211,7 @@
                     <Setting Value="$(DpaProjectFolder)\scripts" Name="WorkingDir"/>
                 </Settings>
                 <Settings Name="Generate code for Port">
-                    <Setting Value="true" Name="Active"/>
+                    <Setting Value="false" Name="Active"/>
                     <Setting Value="$(DpaProjectFolder)\scripts\CodeGenerator.bat" Name="CommandLine"/>
                     <Setting Value="UTF-8" Name="CommandLineEncoding"/>
                     <Setting Value="" Name="Comment"/>
@@ -262,7 +262,7 @@
                     <Setting Value="$(DpaProjectFolder)\scripts" Name="WorkingDir"/>
                 </Settings>
                 <Settings Name="Generate code for Wdg">
-                    <Setting Value="true" Name="Active"/>
+                    <Setting Value="false" Name="Active"/>
                     <Setting Value="$(DpaProjectFolder)\scripts\CodeGenerator.bat" Name="CommandLine"/>
                     <Setting Value="UTF-8" Name="CommandLineEncoding"/>
                     <Setting Value="" Name="Comment"/>

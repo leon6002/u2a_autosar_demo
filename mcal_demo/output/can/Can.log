@@ -1,0 +1,68 @@
+########################################################################################################################
+# AUTOSAR Renesas R4.3.1 CAN Driver Generation Tool for X2x                   
+# Run time      = [04 Dec 2025 - 22:24:42]
+#    Command line arguments = D:\isoft\demo\mcal_demo\Config\ECUC\Demo_U2A16_MCAL_ASR431_V430300_ConfigProject.ecuc.arxml
+#	D:\isoft\demo\mcal_demo\X2x\modules\can\generator\U2A16\R431_CAN_U2A16_BSWMDT.arxml
+#	D:\isoft\demo\mcal_demo\X2x\common\generic\stubs\4_3_1\Dem\xml\Dem_Can.arxml
+#	D:\isoft\demo\mcal_demo\X2x\common\generic\stubs\4_3_1\EcuM\xml\EcuM_Can.arxml
+#	D:\isoft\demo\mcal_demo\X2x\common\generic\stubs\4_3_1\Os\xml\Os_Can.arxml
+#
+# Copyright(c) 2021 Renesas Electronics Corporation. All rights reserved.
+########################################################################################################################
+
+INF000001: Tool Version: MCALConfGen.exe version: 1.4.0, CanU2x.dll 
+           version: 1.5.0 
+INF000002: Command line arguments: MCALConfGen.exe -m can -O  
+           D:\isoft\demo\mcal_demo\output\can  
+           D:\isoft\demo\mcal_demo\Config\ECUC\Demo_U2A16_MCAL_ASR431_V430300_ConfigProject.ecuc.arxml  
+           D:\isoft\demo\mcal_demo\scripts\Sample_Application_U2Ax.trxml  
+           D:\isoft\demo\mcal_demo\X2x\modules\can\generator\U2A16\R431_CAN_U2A16_BSWMDT.arxml  
+           D:\isoft\demo\mcal_demo\X2x\common\generic\stubs\4_3_1\Dem\xml\Dem_Can.arxml  
+           D:\isoft\demo\mcal_demo\X2x\common\generic\stubs\4_3_1\EcuM\xml\EcuM_Can.arxml 
+           D:\isoft\demo\mcal_demo\X2x\common\generic\stubs\4_3_1\Os\xml\Os_Can.arxml 
+INF080016: The parameter 'CanHardwareObjectUsesPolling' in the RECEIVE  
+           'CanHardwareObject' container having short name  
+           'CanHardwareObject_CAN0_Rx_0x5xx_NM_ECU' will be ignored since  
+           none of the parameter 'CanRxProcessing' is configured as  
+           <MIXED> in the container CanController referred by this  
+           hardware object. File name:  
+           D:\isoft\demo\mcal_demo\Config\ECUC\Demo_U2A16_MCAL_ASR431_V430300_ConfigProject.ecuc.arxml.  
+           Container path: 
+           /ActiveEcuC/Can/CanConfigSet0/CanHardwareObject_CAN0_Rx_0x5xx_NM_ECU. 
+INF080016: The parameter 'CanHardwareObjectUsesPolling' in the RECEIVE  
+           'CanHardwareObject' container having short name  
+           'CanHardwareObject_CAN0_Rx_0x708_Diag_Phy_Request' will be  
+           ignored since none of the parameter 'CanRxProcessing' is  
+           configured as <MIXED> in the container CanController referred  
+           by this hardware object. File name:  
+           D:\isoft\demo\mcal_demo\Config\ECUC\Demo_U2A16_MCAL_ASR431_V430300_ConfigProject.ecuc.arxml.  
+           Container path: 
+           /ActiveEcuC/Can/CanConfigSet0/CanHardwareObject_CAN0_Rx_0x708_Diag_Phy_Request. 
+INF080016: The parameter 'CanHardwareObjectUsesPolling' in the RECEIVE  
+           'CanHardwareObject' container having short name  
+           'CanHardwareObject_CAN0_Rx_0x7df_Diag_Fun_Request' will be  
+           ignored since none of the parameter 'CanRxProcessing' is  
+           configured as <MIXED> in the container CanController referred  
+           by this hardware object. File name:  
+           D:\isoft\demo\mcal_demo\Config\ECUC\Demo_U2A16_MCAL_ASR431_V430300_ConfigProject.ecuc.arxml.  
+           Container path: 
+           /ActiveEcuC/Can/CanConfigSet0/CanHardwareObject_CAN0_Rx_0x7df_Diag_Fun_Request. 
+INF080016: The parameter 'CanHardwareObjectUsesPolling' in the RECEIVE  
+           'CanHardwareObject' container having short name  
+           'CanHardwareObject_CAN0_Rx_COM' will be ignored since none of  
+           the parameter 'CanRxProcessing' is configured as <MIXED> in  
+           the container CanController referred by this hardware object.  
+           File name:  
+           D:\isoft\demo\mcal_demo\Config\ECUC\Demo_U2A16_MCAL_ASR431_V430300_ConfigProject.ecuc.arxml.  
+           Container path: 
+           /ActiveEcuC/Can/CanConfigSet0/CanHardwareObject_CAN0_Rx_COM. 
+INF000004: Opened file <output\can\include\Can_Cfg.h> at [04 Dec 2025 - 
+           22:24:42]. 
+INF000004: Opened file <output\can\src\Can_Lcfg.c> at [04 Dec 2025 - 
+           22:24:42]. 
+INF000004: Opened file <output\can\src\Can_PBcfg.c> at [04 Dec 2025 - 
+           22:24:42]. 
+INF000004: Opened file <output\can\Can.log> at [04 Dec 2025 - 22:24:42]. 
+INF000005: <0> Error(s) and <0> Warning(s) detected. 
+INF000006: Execution completed successfully. 
+
