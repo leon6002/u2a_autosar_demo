@@ -1,0 +1,9 @@
+#!gbuild
+[Subproject]
+Fls_Version.c
+Fls_Ram.c
+Fls_LLDriver.c
+Fls_Irq.c
+Fls_Control.c
+Fls.c
+HWIP\HWIP.gpj

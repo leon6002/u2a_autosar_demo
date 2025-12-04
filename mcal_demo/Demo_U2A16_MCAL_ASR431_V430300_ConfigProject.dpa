@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ProjectAssistant Version="5.23.30 SP1">
+    <General>
+        <Name>Demo_U2A16_MCAL_ASR431_V430300_ConfigProject</Name>
+        <Version>1.0</Version>
+        <Author>Admin</Author>
+    </General>
+    <Environment>
+        <Platform>Canoeemu</Platform>
+        <Derivative UUID="35C34EEE-6A21-4D8B-8B60-1CBFC45B32FC">Canoeemu</Derivative>
+        <Compiler></Compiler>
+        <SipIds>
+            <SipId>CBD2100679_D00</SipId>
+        </SipIds>
+        <TargetType>Real Target</TargetType>
+        <UseCases/>
+        <PostBuildLoadableSupport>false</PostBuildLoadableSupport>
+        <PostBuildSelectableSupport>false</PostBuildSelectableSupport>
+        <ProjectType>
+            <Type>Standard</Type>
+        </ProjectType>
+    </Environment>
+    <Folders>
+        <ECUC>.\Config\ECUC</ECUC>
+        <GenData>.\Appl\GenData</GenData>
+        <GenDataVtt>.\Appl\GenDataVtt</GenDataVtt>
+        <Source>.\Appl\Source</Source>
+        <ServiceComponents>.\Config\ServiceComponents</ServiceComponents>
+        <Logs>.\Log</Logs>
+        <SIP>C:\Vector\CBD2100679_D00</SIP>
+        <StartMenu></StartMenu>
+        <ApplicationComponentFolders>
+            <ApplicationComponentFolder>.\Config\ApplicationComponents</ApplicationComponentFolder>
+        </ApplicationComponentFolders>
+        <BswInternalBehaviour>.\Config\InternalBehavior</BswInternalBehaviour>
+        <McData>.\Config\McData</McData>
+        <DefinitionRestriction>.\DefRestrict</DefinitionRestriction>
+        <AUTOSAR>.\Config\AUTOSAR</AUTOSAR>
+    </Folders>
+    <Tools/>
+    <Input>
+        <Options>
+            <IgnoreUuidsSystemDescriptionFiles>false</IgnoreUuidsSystemDescriptionFiles>
+            <IgnoreUuidsStandardConfigurationFiles>false</IgnoreUuidsStandardConfigurationFiles>
+            <GenerateUpdateReport>true</GenerateUpdateReport>
+            <GenerateXmlUpdateReport>false</GenerateXmlUpdateReport>
+        </Options>
+    </Input>
+    <References/>
+    <ECUC>
+        <Active RootPackageName="/ActiveEcuC/ActiveEcuC">.\Config\ECUC\Demo_U2A16_MCAL_ASR431_V430300_ConfigProject.ecuc.arxml</Active>
+    </ECUC>
+    <PostBuildLoadable RTEDataFreezeChecksum="" CurrentConfigurationPhase="PRE_COMPILE"/>
+    <ToolSettings>
+        <Generators>
+            <Settings Name="com.vector.cfg.gui.core.generators.ExtGenStepOrder">
+                <Setting Value="INTERNAL_GENERATION|Generate code for Fls|Generate code for Spi|Generate code for Gpt|Generate code for Dio|Generate code for Pwm|Generate code for Adc|Generate code for Mcu|Generate code for Icu|Generate code for Eth|Generate code for Wdg|Generate code for Port|Generate code for Lin|Generate code for Can" Name="Order"/>
+            </Settings>
+            <Settings Name="com.vector.cfg.gui.core.generators.ExtGenSteps">
+                <Settings Name="Generate code for Adc">
+                    <Setting Value="false" Name="Active"/>
+                    <Setting Value="$(DpaProjectFolder)\scripts\CodeGenerator.bat" Name="CommandLine"/>
+                    <Setting Value="UTF-8" Name="CommandLineEncoding"/>
+                    <Setting Value="" Name="Comment"/>
+                    <Setting Value="Parallel" Name="ExecutionType"/>
+                    <Setting Value="adc" Name="GenerationParameters"/>
+                    <Setting Value="" Name="RequiredAsVersion"/>
+                    <Setting Value="false" Name="SpecificAsVersionRequired"/>
+                    <Setting Value="false" Name="SupportsStandAloneValidation"/>
+                    <Setting Value="Real Target" Name="TargetType"/>
+                    <Setting Value="" Name="TransformationOutput"/>
+                    <Setting Value="false" Name="TransformationRequired"/>
+                    <Setting Value="" Name="TransformationXsltFile"/>
+                    <Setting Value="" Name="ValidationParameters"/>
+                    <Setting Value="$(DpaProjectFolder)\scripts" Name="WorkingDir"/>
+                </Settings>
+                <Settings Name="Generate code for Can">
+                    <Setting Value="true" Name="Active"/>
+                    <Setting Value="$(DpaProjectFolder)\scripts\CodeGenerator.bat" Name="CommandLine"/>
+                    <Setting Value="UTF-8" Name="CommandLineEncoding"/>
+                    <Setting Value="" Name="Comment"/>
+                    <Setting Value="Parallel" Name="ExecutionType"/>
+                    <Setting Value="can" Name="GenerationParameters"/>
+                    <Setting Value="" Name="RequiredAsVersion"/>
+                    <Setting Value="false" Name="SpecificAsVersionRequired"/>
+                    <Setting Value="false" Name="SupportsStandAloneValidation"/>
+                    <Setting Value="Real Target" Name="TargetType"/>
+                    <Setting Value="" Name="TransformationOutput"/>
+                    <Setting Value="false" Name="TransformationRequired"/>
+                    <Setting Value="" Name="TransformationXsltFile"/>
+                    <Setting Value="" Name="ValidationParameters"/>
+                    <Setting Value="$(DpaProjectFolder)\scripts" Name="WorkingDir"/>
+                </Settings>
+                <Settings Name="Generate code for Dio">
+                    <Setting Value="false" Name="Active"/>
+                    <Setting Value="$(DpaProjectFolder)\scripts\CodeGenerator.bat" Name="CommandLine"/>
+                    <Setting Value="UTF-8" Name="CommandLineEncoding"/>
+                    <Setting Value="" Name="Comment"/>
+                    <Setting Value="Parallel" Name="ExecutionType"/>
+                    <Setting Value="dio" Name="GenerationParameters"/>
+                    <Setting Value="" Name="RequiredAsVersion"/>
+                    <Setting Value="false" Name="SpecificAsVersionRequired"/>
+                    <Setting Value="false" Name="SupportsStandAloneValidation"/>
+                    <Setting Value="Real Target" Name="TargetType"/>
+                    <Setting Value="" Name="TransformationOutput"/>
+                    <Setting Value="false" Name="TransformationRequired"/>
+                    <Setting Value="" Name="TransformationXsltFile"/>
+                    <Setting Value="" Name="ValidationParameters"/>
+                    <Setting Value="$(DpaProjectFolder)\scripts" Name="WorkingDir"/>
+                </Settings>
+                <Settings Name="Generate code for Eth">
+                    <Setting Value="false" Name="Active"/>
+                    <Setting Value="$(DpaProjectFolder)\scripts\CodeGenerator.bat" Name="CommandLine"/>
+                    <Setting Value="UTF-8" Name="CommandLineEncoding"/>
+                    <Setting Value="" Name="Comment"/>
+                    <Setting Value="Parallel" Name="ExecutionType"/>
+                    <Setting Value="eth" Name="GenerationParameters"/>
+                    <Setting Value="" Name="RequiredAsVersion"/>
+                    <Setting Value="false" Name="SpecificAsVersionRequired"/>
+                    <Setting Value="false" Name="SupportsStandAloneValidation"/>
+                    <Setting Value="Real Target" Name="TargetType"/>
+                    <Setting Value="" Name="TransformationOutput"/>
+                    <Setting Value="false" Name="TransformationRequired"/>
+                    <Setting Value="" Name="TransformationXsltFile"/>
+                    <Setting Value="" Name="ValidationParameters"/>
+                    <Setting Value="$(DpaProjectFolder)\scripts" Name="WorkingDir"/>
+                </Settings>
+                <Settings Name="Generate code for Fls">
+                    <Setting Value="true" Name="Active"/>
+                    <Setting Value="$(DpaProjectFolder)\scripts\CodeGenerator.bat" Name="CommandLine"/>
+                    <Setting Value="UTF-8" Name="CommandLineEncoding"/>
+                    <Setting Value="" Name="Comment"/>
+                    <Setting Value="Parallel" Name="ExecutionType"/>
+                    <Setting Value="fls" Name="GenerationParameters"/>
+                    <Setting Value="" Name="RequiredAsVersion"/>
+                    <Setting Value="false" Name="SpecificAsVersionRequired"/>
+                    <Setting Value="false" Name="SupportsStandAloneValidation"/>
+                    <Setting Value="Real Target" Name="TargetType"/>
+                    <Setting Value="" Name="TransformationOutput"/>
+                    <Setting Value="false" Name="TransformationRequired"/>
+                    <Setting Value="" Name="TransformationXsltFile"/>
+                    <Setting Value="" Name="ValidationParameters"/>
+                    <Setting Value="$(DpaProjectFolder)\scripts" Name="WorkingDir"/>
+                </Settings>
+                <Settings Name="Generate code for Gpt">
+                    <Setting Value="true" Name="Active"/>
+                    <Setting Value="$(DpaProjectFolder)\scripts\CodeGenerator.bat" Name="CommandLine"/>
+                    <Setting Value="UTF-8" Name="CommandLineEncoding"/>
+                    <Setting Value="" Name="Comment"/>
+                    <Setting Value="Parallel" Name="ExecutionType"/>
+                    <Setting Value="gpt" Name="GenerationParameters"/>
+                    <Setting Value="" Name="RequiredAsVersion"/>
+                    <Setting Value="false" Name="SpecificAsVersionRequired"/>
+                    <Setting Value="false" Name="SupportsStandAloneValidation"/>
+                    <Setting Value="Real Target" Name="TargetType"/>
+                    <Setting Value="" Name="TransformationOutput"/>
+                    <Setting Value="false" Name="TransformationRequired"/>
+                    <Setting Value="" Name="TransformationXsltFile"/>
+                    <Setting Value="" Name="ValidationParameters"/>
+                    <Setting Value="$(DpaProjectFolder)\scripts" Name="WorkingDir"/>
+                </Settings>
+                <Settings Name="Generate code for Icu">
+                    <Setting Value="false" Name="Active"/>
+                    <Setting Value="$(DpaProjectFolder)\scripts\CodeGenerator.bat" Name="CommandLine"/>
+                    <Setting Value="UTF-8" Name="CommandLineEncoding"/>
+                    <Setting Value="" Name="Comment"/>
+                    <Setting Value="Parallel" Name="ExecutionType"/>
+                    <Setting Value="icu" Name="GenerationParameters"/>
+                    <Setting Value="" Name="RequiredAsVersion"/>
+                    <Setting Value="false" Name="SpecificAsVersionRequired"/>
+                    <Setting Value="false" Name="SupportsStandAloneValidation"/>
+                    <Setting Value="Real Target" Name="TargetType"/>
+                    <Setting Value="" Name="TransformationOutput"/>
+                    <Setting Value="false" Name="TransformationRequired"/>
+                    <Setting Value="" Name="TransformationXsltFile"/>
+                    <Setting Value="" Name="ValidationParameters"/>
+                    <Setting Value="$(DpaProjectFolder)\scripts" Name="WorkingDir"/>
+                </Settings>
+                <Settings Name="Generate code for Lin">
+                    <Setting Value="false" Name="Active"/>
+                    <Setting Value="$(DpaProjectFolder)\scripts\CodeGenerator.bat" Name="CommandLine"/>
+                    <Setting Value="UTF-8" Name="CommandLineEncoding"/>
+                    <Setting Value="" Name="Comment"/>
+                    <Setting Value="Parallel" Name="ExecutionType"/>
+                    <Setting Value="lin" Name="GenerationParameters"/>
+                    <Setting Value="" Name="RequiredAsVersion"/>
+                    <Setting Value="false" Name="SpecificAsVersionRequired"/>
+                    <Setting Value="false" Name="SupportsStandAloneValidation"/>
+                    <Setting Value="Real Target" Name="TargetType"/>
+                    <Setting Value="" Name="TransformationOutput"/>
+                    <Setting Value="false" Name="TransformationRequired"/>
+                    <Setting Value="" Name="TransformationXsltFile"/>
+                    <Setting Value="" Name="ValidationParameters"/>
+                    <Setting Value="$(DpaProjectFolder)\scripts" Name="WorkingDir"/>
+                </Settings>
+                <Settings Name="Generate code for Mcu">
+                    <Setting Value="true" Name="Active"/>
+                    <Setting Value="$(DpaProjectFolder)\scripts\CodeGenerator.bat" Name="CommandLine"/>
+                    <Setting Value="UTF-8" Name="CommandLineEncoding"/>
+                    <Setting Value="" Name="Comment"/>
+                    <Setting Value="Parallel" Name="ExecutionType"/>
+                    <Setting Value="mcu" Name="GenerationParameters"/>
+                    <Setting Value="" Name="RequiredAsVersion"/>
+                    <Setting Value="false" Name="SpecificAsVersionRequired"/>
+                    <Setting Value="false" Name="SupportsStandAloneValidation"/>
+                    <Setting Value="Real Target" Name="TargetType"/>
+                    <Setting Value="" Name="TransformationOutput"/>
+                    <Setting Value="false" Name="TransformationRequired"/>
+                    <Setting Value="" Name="TransformationXsltFile"/>
+                    <Setting Value="" Name="ValidationParameters"/>
+                    <Setting Value="$(DpaProjectFolder)\scripts" Name="WorkingDir"/>
+                </Settings>
+                <Settings Name="Generate code for Port">
+                    <Setting Value="true" Name="Active"/>
+                    <Setting Value="$(DpaProjectFolder)\scripts\CodeGenerator.bat" Name="CommandLine"/>
+                    <Setting Value="UTF-8" Name="CommandLineEncoding"/>
+                    <Setting Value="" Name="Comment"/>
+                    <Setting Value="Parallel" Name="ExecutionType"/>
+                    <Setting Value="port" Name="GenerationParameters"/>
+                    <Setting Value="" Name="RequiredAsVersion"/>
+                    <Setting Value="false" Name="SpecificAsVersionRequired"/>
+                    <Setting Value="false" Name="SupportsStandAloneValidation"/>
+                    <Setting Value="Real Target" Name="TargetType"/>
+                    <Setting Value="" Name="TransformationOutput"/>
+                    <Setting Value="false" Name="TransformationRequired"/>
+                    <Setting Value="" Name="TransformationXsltFile"/>
+                    <Setting Value="" Name="ValidationParameters"/>
+                    <Setting Value="$(DpaProjectFolder)\scripts" Name="WorkingDir"/>
+                </Settings>
+                <Settings Name="Generate code for Pwm">
+                    <Setting Value="false" Name="Active"/>
+                    <Setting Value="$(DpaProjectFolder)\scripts\CodeGenerator.bat" Name="CommandLine"/>
+                    <Setting Value="UTF-8" Name="CommandLineEncoding"/>
+                    <Setting Value="" Name="Comment"/>
+                    <Setting Value="Parallel" Name="ExecutionType"/>
+                    <Setting Value="pwm" Name="GenerationParameters"/>
+                    <Setting Value="" Name="RequiredAsVersion"/>
+                    <Setting Value="false" Name="SpecificAsVersionRequired"/>
+                    <Setting Value="false" Name="SupportsStandAloneValidation"/>
+                    <Setting Value="Real Target" Name="TargetType"/>
+                    <Setting Value="" Name="TransformationOutput"/>
+                    <Setting Value="false" Name="TransformationRequired"/>
+                    <Setting Value="" Name="TransformationXsltFile"/>
+                    <Setting Value="" Name="ValidationParameters"/>
+                    <Setting Value="$(DpaProjectFolder)\scripts" Name="WorkingDir"/>
+                </Settings>
+                <Settings Name="Generate code for Spi">
+                    <Setting Value="false" Name="Active"/>
+                    <Setting Value="$(DpaProjectFolder)\scripts\CodeGenerator.bat" Name="CommandLine"/>
+                    <Setting Value="UTF-8" Name="CommandLineEncoding"/>
+                    <Setting Value="" Name="Comment"/>
+                    <Setting Value="Parallel" Name="ExecutionType"/>
+                    <Setting Value="spi" Name="GenerationParameters"/>
+                    <Setting Value="" Name="RequiredAsVersion"/>
+                    <Setting Value="false" Name="SpecificAsVersionRequired"/>
+                    <Setting Value="false" Name="SupportsStandAloneValidation"/>
+                    <Setting Value="Real Target" Name="TargetType"/>
+                    <Setting Value="" Name="TransformationOutput"/>
+                    <Setting Value="false" Name="TransformationRequired"/>
+                    <Setting Value="" Name="TransformationXsltFile"/>
+                    <Setting Value="" Name="ValidationParameters"/>
+                    <Setting Value="$(DpaProjectFolder)\scripts" Name="WorkingDir"/>
+                </Settings>
+                <Settings Name="Generate code for Wdg">
+                    <Setting Value="true" Name="Active"/>
+                    <Setting Value="$(DpaProjectFolder)\scripts\CodeGenerator.bat" Name="CommandLine"/>
+                    <Setting Value="UTF-8" Name="CommandLineEncoding"/>
+                    <Setting Value="" Name="Comment"/>
+                    <Setting Value="Parallel" Name="ExecutionType"/>
+                    <Setting Value="wdg" Name="GenerationParameters"/>
+                    <Setting Value="" Name="RequiredAsVersion"/>
+                    <Setting Value="false" Name="SpecificAsVersionRequired"/>
+                    <Setting Value="false" Name="SupportsStandAloneValidation"/>
+                    <Setting Value="Real Target" Name="TargetType"/>
+                    <Setting Value="" Name="TransformationOutput"/>
+                    <Setting Value="false" Name="TransformationRequired"/>
+                    <Setting Value="" Name="TransformationXsltFile"/>
+                    <Setting Value="" Name="ValidationParameters"/>
+                    <Setting Value="$(DpaProjectFolder)\scripts" Name="WorkingDir"/>
+                </Settings>
+            </Settings>
+            <Settings Name="com.vector.cfg.gui.core.generators.GeneratedModules"/>
+            <Settings Name="com.vector.cfg.gui.core.generators.GenerationTarget">
+                <Setting Value="Real Target" Name="TargetType"/>
+            </Settings>
+            <Settings Name="com.vector.cfg.gui.core.generators.GeneratorsWithoutModuleDef">
+                <Setting Value="false" Name="/MICROSAR/McDataConv"/>
+            </Settings>
+        </Generators>
+        <Misc>
+            <Settings Name="com.vector.cfg.gen.core.bswmdmigration.internal.service.BswImplVersionPersistor">
+                <Settings Name="|Renesas|EcucDefs_Dio|Dio">
+                    <Setting Value="1.5.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|Renesas|EcucDefs_Eth|Eth">
+                    <Setting Value="1.6.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|Renesas|EcucDefs_Fls|Fls">
+                    <Setting Value="1.5.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|Renesas|EcucDefs_Fr|Fr">
+                    <Setting Value="1.5.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|Renesas|EcucDefs_Lin|Lin">
+                    <Setting Value="1.5.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|Renesas|EcucDefs_Mcu|Mcu">
+                    <Setting Value="1.5.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|Renesas|EcucDefs_Port|Port">
+                    <Setting Value="1.5.0" Name="BswImplSwVersion"/>
+                </Settings>
+            </Settings>
+        </Misc>
+    </ToolSettings>
+    <TopDownServiceConfiguration>
+        <NvM>true</NvM>
+    </TopDownServiceConfiguration>
+    <Miscellaneous>
+        <AmdGenerateDebugData>false</AmdGenerateDebugData>
+        <AutomaticSyncSystemDescription>false</AutomaticSyncSystemDescription>
+    </Miscellaneous>
+    <SwctGeneration/>
+</ProjectAssistant>

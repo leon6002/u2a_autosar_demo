@@ -1,0 +1,15 @@
+#!gbuild
+[Subproject]
+r_rfd_types.h
+r_rfd_memmap.h
+r_rfd_df_version.h
+r_rfd_df_types.h
+r_rfd_df_error.h
+r_rfd_df_api.h
+r_rfd_device.h
+r_rfd_constant.h
+r_rfd_compiler.h
+r_rfd_common_version.h
+r_rfd_common_types.h
+r_rfd_common_error.h
+r_rfd_common_api.h

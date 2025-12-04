@@ -1,0 +1,8 @@
+#!gbuild
+[Subproject]
+Mcu_Version.h
+Mcu_Ram.h
+Mcu_LLDriver.h
+Mcu_Irq.h
+Mcu.h
+U2Ax\U2Ax.gpj

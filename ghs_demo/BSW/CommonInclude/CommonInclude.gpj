@@ -1,0 +1,8 @@
+#!gbuild
+[Subproject]
+BswM_Ext.c
+Std_Types.h
+ComStack_Types.h
+Compiler_Cfg.h
+BswM_Ext.h
+MemMap.h

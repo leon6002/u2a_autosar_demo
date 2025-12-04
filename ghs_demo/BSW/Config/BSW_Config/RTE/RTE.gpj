@@ -1,0 +1,7 @@
+#!gbuild
+[Subproject]
+Rte_EcuM.c
+Rte_NvM.c
+Rte_EcuM.h
+Rte_NvM.h
+SchM\SchM.gpj

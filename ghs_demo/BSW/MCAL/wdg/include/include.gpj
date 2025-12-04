@@ -1,0 +1,10 @@
+#!gbuild
+[Subproject]
+Wdg_Version.h
+Wdg_Types.h
+Wdg_Ram.h
+Wdg_PBTypes.h
+Wdg_MultiInstance.h
+Wdg_Mapping.h
+Wdg.h
+WDTB\WDTB.gpj

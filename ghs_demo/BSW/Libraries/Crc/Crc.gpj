@@ -1,0 +1,5 @@
+#!gbuild
+[Subproject]
+Crc.c
+Crc_MemMap.h
+Crc.h

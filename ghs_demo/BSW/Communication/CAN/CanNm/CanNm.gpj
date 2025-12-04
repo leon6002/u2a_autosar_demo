@@ -1,0 +1,7 @@
+#!gbuild
+[Subproject]
+CanNm.c
+CanNm_MemMap.h
+CanNm_Internal.h
+CanNm_Cbk.h
+CanNm.h

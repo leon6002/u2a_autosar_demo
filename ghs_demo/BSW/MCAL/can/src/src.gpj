@@ -1,0 +1,9 @@
+#!gbuild
+[Subproject]
+Can_Write.c
+Can_Version.c
+Can_Ram.c
+Can_ModeCntrl.c
+Can_MainServ.c
+Can_Irq.c
+Can.c

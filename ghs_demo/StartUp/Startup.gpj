@@ -1,0 +1,13 @@
+#!gbuild
+[Subproject]
+Interrupt_VectorTable_PE2.c
+Interrupt_VectorTable_PE3.c
+Interrupt_VectorTable_PE1.c
+Interrupt_VectorTable_PE0.c
+cold_irq.h
+dr7f702300_0.h
+io_macros_v2.h
+set_csa.850
+coldreset.850
+U2Ax_startup_PE0.850
+U2Ax_startup_PEn.850

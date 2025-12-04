@@ -1,0 +1,11 @@
+#!gbuild
+[Subproject]
+CanIf_Internal.c
+CanIf.c
+CanIf_Types.h
+CanIf_MemMap.h
+CanIf_Internal.h
+CanIf_Cbk.h
+CanIf_CanTrcv.h
+CanIf_Can.h
+CanIf.h

@@ -1,0 +1,10 @@
+#!gbuild
+[Subproject]
+Gpt_Version.h
+Gpt_Types.h
+Gpt_Ram.h
+Gpt_PBTypes.h
+Gpt_MultiInstance.h
+Gpt_Mapping.h
+Gpt.h
+HWIP\HWIP.gpj

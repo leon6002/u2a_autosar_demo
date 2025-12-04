@@ -1,0 +1,9 @@
+version = 1
+title = "Demo_RH850_U2A16_V2504_GHS20220104_Project"
+
+core {
+	0 { download = {"./Output/Demo_RH850_U2A16_V2504_GHS20220104_Project.elf"} }
+	1 { symbol = {"./Output/Demo_RH850_U2A16_V2504_GHS20220104_Project.elf"} }
+	2 { symbol = {"./Output/Demo_RH850_U2A16_V2504_GHS20220104_Project.elf"} }
+	3 { symbol = {"./Output/Demo_RH850_U2A16_V2504_GHS20220104_Project.elf"} }
+}

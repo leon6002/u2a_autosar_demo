@@ -1,0 +1,7 @@
+#!gbuild
+[Subproject]
+BSW\BSW.gpj
+LinkFile\LinkFile.gpj
+Main\Main.gpj
+StartUp\StartUp.gpj
+ASW\ASW.gpj

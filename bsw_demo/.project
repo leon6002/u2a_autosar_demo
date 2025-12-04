@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>Demo_RH850U2A16_V2504_BSW_ConfigProject</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+	</buildSpec>
+	<natures>
+		<nature>org.artop.aal.workspace.autosarnature</nature>
+		<nature>cn.com.isoft.workspace.bswbuildernature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>Common</name>
+			<type>2</type>
+			<locationURI>Temp/Common</locationURI>
+		</link>
+		<link>
+			<name>MCAL</name>
+			<type>2</type>
+			<locationURI>Temp/AUTOSAR_00048</locationURI>
+		</link>
+		<link>
+			<name>MCU</name>
+			<type>2</type>
+			<locationURI>Temp/R7F702300</locationURI>
+		</link>
+		<link>
+			<name>STD</name>
+			<type>2</type>
+			<locationURI>Temp/STD</locationURI>
+		</link>
+	</linkedResources>
+</projectDescription>

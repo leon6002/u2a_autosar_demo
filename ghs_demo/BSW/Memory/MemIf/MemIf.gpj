@@ -1,0 +1,6 @@
+#!gbuild
+[Subproject]
+MemIf.c
+MemIf_Types.h
+MemIf_MemMap.h
+MemIf.h

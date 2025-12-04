@@ -1,0 +1,5 @@
+#!gbuild
+[Subproject]
+NvM\NvM.gpj
+MemIf\MemIf.gpj
+Fee\Fee.gpj

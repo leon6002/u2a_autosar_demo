@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00048.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>AUTOSAR</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>BswOverviews</SHORT-NAME>
+          <CATEGORY>STANDARD</CATEGORY>
+          <ELEMENTS>
+            <BSW-MODULE-DESCRIPTION>
+              <SHORT-NAME>CanNm</SHORT-NAME>
+              <LONG-NAME>
+                <L-4 L="EN">CanNm Driver</L-4>
+              </LONG-NAME>
+              <CATEGORY>BSW_MODULE</CATEGORY>
+              <IMPLEMENTED-ENTRYS>
+                <BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                  <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR/BswInterfaces/CanNm_MainFunction</BSW-MODULE-ENTRY-REF>
+                </BSW-MODULE-ENTRY-REF-CONDITIONAL>
+              </IMPLEMENTED-ENTRYS>
+              <MODULE-ID>80</MODULE-ID>
+              <PROVIDED-CLIENT-SERVER-ENTRYS>
+                <BSW-MODULE-CLIENT-SERVER-ENTRY>
+                  <SHORT-NAME>pCanNm_NetworkRequest</SHORT-NAME>
+                  <ENCAPSULATED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR/BswInterfaces/CanNm_NetworkRequest</ENCAPSULATED-ENTRY-REF>
+                </BSW-MODULE-CLIENT-SERVER-ENTRY>
+                <BSW-MODULE-CLIENT-SERVER-ENTRY>
+                  <SHORT-NAME>pCanNm_NetworkRelease</SHORT-NAME>
+                  <ENCAPSULATED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR/BswInterfaces/CanNm_NetworkRelease</ENCAPSULATED-ENTRY-REF>
+                  <IS-SYNCHRONOUS>false</IS-SYNCHRONOUS>
+                </BSW-MODULE-CLIENT-SERVER-ENTRY>
+              </PROVIDED-CLIENT-SERVER-ENTRYS>
+              <INTERNAL-BEHAVIORS>
+                <BSW-INTERNAL-BEHAVIOR>
+                  <SHORT-NAME>CanNmBehavior</SHORT-NAME>
+                  <EXCLUSIVE-AREAS>
+                    <EXCLUSIVE-AREA>
+                      <SHORT-NAME>PnEiraCalc</SHORT-NAME>
+                    </EXCLUSIVE-AREA>
+                    <EXCLUSIVE-AREA>
+                      <SHORT-NAME>Context</SHORT-NAME>
+                    </EXCLUSIVE-AREA>
+                  </EXCLUSIVE-AREAS>
+                  <ENTITYS>
+                    <BSW-SCHEDULABLE-ENTITY>
+                      <SHORT-NAME>CanNm_MainFunction</SHORT-NAME>
+                      <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
+                      <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR/BswInterfaces/CanNm_MainFunction</IMPLEMENTED-ENTRY-REF>
+                    </BSW-SCHEDULABLE-ENTITY>
+                    <BSW-CALLED-ENTITY>
+                      <SHORT-NAME>CanNm_NetworkRequest</SHORT-NAME>
+                      <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
+                      <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR/BswInterfaces/CanNm_NetworkRequest</IMPLEMENTED-ENTRY-REF>
+                    </BSW-CALLED-ENTITY>
+                    <BSW-CALLED-ENTITY>
+                      <SHORT-NAME>CanNm_NetworkRelease</SHORT-NAME>
+                      <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
+                      <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR/BswInterfaces/CanNm_NetworkRelease</IMPLEMENTED-ENTRY-REF>
+                    </BSW-CALLED-ENTITY>
+                  </ENTITYS>
+                  <EVENTS>
+                    <BSW-TIMING-EVENT>
+                      <SHORT-NAME>TimingEvent_MainFunction</SHORT-NAME>
+                      <STARTS-ON-EVENT-REF DEST="BSW-SCHEDULABLE-ENTITY">/AUTOSAR/BswOverviews/CanNm/CanNmBehavior/CanNm_MainFunction</STARTS-ON-EVENT-REF>
+                      <PERIOD>0.005</PERIOD>
+                    </BSW-TIMING-EVENT>
+                    <BSW-OPERATION-INVOKED-EVENT>
+                      <SHORT-NAME>OperationInvokedEvent_NetworkRequest</SHORT-NAME>
+                      <STARTS-ON-EVENT-REF DEST="BSW-CALLED-ENTITY">/AUTOSAR/BswOverviews/CanNm/CanNmBehavior/CanNm_NetworkRequest</STARTS-ON-EVENT-REF>
+                      <ENTRY-REF DEST="BSW-MODULE-CLIENT-SERVER-ENTRY">/AUTOSAR/BswOverviews/CanNm/pCanNm_NetworkRequest</ENTRY-REF>
+                    </BSW-OPERATION-INVOKED-EVENT>
+                    <BSW-OPERATION-INVOKED-EVENT>
+                      <SHORT-NAME>OperationInvokedEvent_NetworkRelease</SHORT-NAME>
+                      <STARTS-ON-EVENT-REF DEST="BSW-CALLED-ENTITY">/AUTOSAR/BswOverviews/CanNm/CanNmBehavior/CanNm_NetworkRelease</STARTS-ON-EVENT-REF>
+                      <ENTRY-REF DEST="BSW-MODULE-CLIENT-SERVER-ENTRY">/AUTOSAR/BswOverviews/CanNm/pCanNm_NetworkRelease</ENTRY-REF>
+                    </BSW-OPERATION-INVOKED-EVENT>
+                  </EVENTS>
+                </BSW-INTERNAL-BEHAVIOR>
+              </INTERNAL-BEHAVIORS>
+            </BSW-MODULE-DESCRIPTION>
+          </ELEMENTS>
+        </AR-PACKAGE>
+        <AR-PACKAGE>
+          <SHORT-NAME>BswImplementations</SHORT-NAME>
+          <ELEMENTS>
+            <BSW-IMPLEMENTATION>
+              <SHORT-NAME>CanNmImplementation</SHORT-NAME>
+              <CODE-DESCRIPTORS>
+                <CODE>
+                  <SHORT-NAME>Code</SHORT-NAME>
+                  <ARTIFACT-DESCRIPTORS>
+                    <AUTOSAR-ENGINEERING-OBJECT>
+                      <SHORT-LABEL>Label</SHORT-LABEL>
+                      <CATEGORY>Category</CATEGORY>
+                    </AUTOSAR-ENGINEERING-OBJECT>
+                  </ARTIFACT-DESCRIPTORS>
+                </CODE>
+              </CODE-DESCRIPTORS>
+              <PROGRAMMING-LANGUAGE>C</PROGRAMMING-LANGUAGE>
+              <RESOURCE-CONSUMPTION>
+                <SHORT-NAME>resourceConsumption</SHORT-NAME>
+              </RESOURCE-CONSUMPTION>
+              <SW-VERSION>1.0.0</SW-VERSION>
+              <VENDOR-ID>62</VENDOR-ID>
+              <AR-RELEASE-VERSION>1.0.0</AR-RELEASE-VERSION>
+              <BEHAVIOR-REF DEST="BSW-INTERNAL-BEHAVIOR">/AUTOSAR/BswOverviews/CanNm/CanNmBehavior</BEHAVIOR-REF>
+            </BSW-IMPLEMENTATION>
+          </ELEMENTS>
+        </AR-PACKAGE>
+        <AR-PACKAGE>
+          <SHORT-NAME>BswInterfaces</SHORT-NAME>
+          <ELEMENTS>
+            <BSW-MODULE-ENTRY>
+              <SHORT-NAME>CanNm_MainFunction</SHORT-NAME>
+              <SERVICE-ID>19</SERVICE-ID>
+              <IS-SYNCHRONOUS>true</IS-SYNCHRONOUS>
+              <CALL-TYPE>SCHEDULED</CALL-TYPE>
+              <EXECUTION-CONTEXT>TASK</EXECUTION-CONTEXT>
+              <SW-SERVICE-IMPL-POLICY>STANDARD</SW-SERVICE-IMPL-POLICY>
+            </BSW-MODULE-ENTRY>
+            <BSW-MODULE-ENTRY>
+              <SHORT-NAME>CanNm_NetworkRequest</SHORT-NAME>
+              <SERVICE-ID>2</SERVICE-ID>
+              <IS-REENTRANT>false</IS-REENTRANT>
+              <IS-SYNCHRONOUS>true</IS-SYNCHRONOUS>
+              <CALL-TYPE>REGULAR</CALL-TYPE>
+              <EXECUTION-CONTEXT>TASK</EXECUTION-CONTEXT>
+              <SW-SERVICE-IMPL-POLICY>STANDARD</SW-SERVICE-IMPL-POLICY>
+              <RETURN-TYPE>
+                <SHORT-NAME>retval</SHORT-NAME>
+                <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                <DIRECTION>OUT</DIRECTION>
+                <SW-DATA-DEF-PROPS>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR/DataTypes/Std_ReturnType</IMPLEMENTATION-DATA-TYPE-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </SW-DATA-DEF-PROPS>
+              </RETURN-TYPE>
+              <ARGUMENTS>
+                <SW-SERVICE-ARG>
+                  <SHORT-NAME>nmChannelHandle</SHORT-NAME>
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <DIRECTION>IN</DIRECTION>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR/DataTypes/NetworkHandleType</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </SW-SERVICE-ARG>
+              </ARGUMENTS>
+            </BSW-MODULE-ENTRY>
+            <BSW-MODULE-ENTRY>
+              <SHORT-NAME>CanNm_NetworkRelease</SHORT-NAME>
+              <SERVICE-ID>3</SERVICE-ID>
+              <IS-SYNCHRONOUS>true</IS-SYNCHRONOUS>
+              <CALL-TYPE>REGULAR</CALL-TYPE>
+              <EXECUTION-CONTEXT>TASK</EXECUTION-CONTEXT>
+              <SW-SERVICE-IMPL-POLICY>STANDARD</SW-SERVICE-IMPL-POLICY>
+              <RETURN-TYPE>
+                <SHORT-NAME>retval</SHORT-NAME>
+                <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                <DIRECTION>OUT</DIRECTION>
+                <SW-DATA-DEF-PROPS>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR/DataTypes/Std_ReturnType</IMPLEMENTATION-DATA-TYPE-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </SW-DATA-DEF-PROPS>
+              </RETURN-TYPE>
+              <ARGUMENTS>
+                <SW-SERVICE-ARG>
+                  <SHORT-NAME>nmChannelHandle</SHORT-NAME>
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <DIRECTION>IN</DIRECTION>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR/DataTypes/NetworkHandleType</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </SW-SERVICE-ARG>
+              </ARGUMENTS>
+            </BSW-MODULE-ENTRY>
+          </ELEMENTS>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

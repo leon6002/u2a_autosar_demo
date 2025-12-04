@@ -1,0 +1,13 @@
+#!gbuild
+[Subproject]
+r_rfd_config.h
+Mcu_Cbk.h
+Gpt_Cfg.h
+Mcu_Reg.h
+Fls_Cbk.h
+Wdg_Cfg.h
+Gpt_Cbk.h
+Fls_Cfg.h
+Mcu_Cfg.h
+Port_Cfg.h
+Can_Cfg.h

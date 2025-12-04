@@ -1,0 +1,4 @@
+#!gbuild
+[Subproject]
+Mcu\Mcu.gpj
+Processor\Processor.gpj

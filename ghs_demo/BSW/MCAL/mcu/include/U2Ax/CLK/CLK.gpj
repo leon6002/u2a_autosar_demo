@@ -1,0 +1,4 @@
+#!gbuild
+[Subproject]
+Mcu_CLK_PBTypes.h
+Mcu_CLK_LLDriver.h

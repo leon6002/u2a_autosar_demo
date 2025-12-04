@@ -1,0 +1,6 @@
+#!gbuild
+[Subproject]
+Det.c
+Det_Types.h
+Det_MemMap.h
+Det.h

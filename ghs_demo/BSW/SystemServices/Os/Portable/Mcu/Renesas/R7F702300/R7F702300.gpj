@@ -1,0 +1,9 @@
+#!gbuild
+[Subproject]
+Mcu_Timer.c
+Mcu_Int.c
+Mcu_Core.c
+Os_MemmapImp.h
+Mcu_Timer.h
+Mcu_Int.h
+Mcu_Core.h

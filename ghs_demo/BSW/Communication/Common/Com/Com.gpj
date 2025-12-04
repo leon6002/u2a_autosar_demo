@@ -1,0 +1,12 @@
+#!gbuild
+[Subproject]
+Com_TxInternal.c
+Com_RxInternal.c
+Com_Internal.c
+Com_GwInternal.c
+Com.c
+Com_Types.h
+Com_MemMap.h
+Com_Internal.h
+Com_Cbk.h
+Com.h

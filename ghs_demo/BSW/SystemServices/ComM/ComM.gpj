@@ -1,0 +1,17 @@
+#!gbuild
+[Subproject]
+ComM_Pnc.c
+ComM_Ch.c
+ComM.c
+ComM_Version.h
+ComM_Types.h
+ComM_Pnc.h
+ComM_Nm.h
+ComM_MemMap.h
+ComM_Internal.h
+ComM_EcuM.h
+ComM_Dcm.h
+ComM_Ch.h
+ComM_BusSM.h
+ComM_BswM.h
+ComM.h

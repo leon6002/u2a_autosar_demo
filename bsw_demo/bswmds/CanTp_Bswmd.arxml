@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00048.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>AUTOSAR</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>BswOverviews</SHORT-NAME>
+          <ELEMENTS>
+            <BSW-MODULE-DESCRIPTION>
+              <SHORT-NAME>CanTp</SHORT-NAME>
+              <IMPLEMENTED-ENTRYS>
+                <BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                  <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR/BswInterfaces/CanTp_MainFunction</BSW-MODULE-ENTRY-REF>
+                </BSW-MODULE-ENTRY-REF-CONDITIONAL>
+              </IMPLEMENTED-ENTRYS>
+              <PROVIDED-CLIENT-SERVER-ENTRYS>
+                <BSW-MODULE-CLIENT-SERVER-ENTRY>
+                  <SHORT-NAME>pCanTp_RxIndication</SHORT-NAME>
+                  <ENCAPSULATED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR/BswInterfaces/CanTp_RxIndication</ENCAPSULATED-ENTRY-REF>
+                  <IS-SYNCHRONOUS>true</IS-SYNCHRONOUS>
+                </BSW-MODULE-CLIENT-SERVER-ENTRY>
+                <BSW-MODULE-CLIENT-SERVER-ENTRY>
+                  <SHORT-NAME>pCanTp_TxConfirmation</SHORT-NAME>
+                  <ENCAPSULATED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR/BswInterfaces/CanTp_TxConfirmation</ENCAPSULATED-ENTRY-REF>
+                  <IS-SYNCHRONOUS>true</IS-SYNCHRONOUS>
+                </BSW-MODULE-CLIENT-SERVER-ENTRY>
+                <BSW-MODULE-CLIENT-SERVER-ENTRY>
+                  <SHORT-NAME>pCanTp_CancelReceive</SHORT-NAME>
+                  <ENCAPSULATED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR/BswInterfaces/CanTp_CancelReceive</ENCAPSULATED-ENTRY-REF>
+                  <IS-SYNCHRONOUS>true</IS-SYNCHRONOUS>
+                </BSW-MODULE-CLIENT-SERVER-ENTRY>
+                <BSW-MODULE-CLIENT-SERVER-ENTRY>
+                  <SHORT-NAME>pCanTp_CancelTransmit</SHORT-NAME>
+                  <ENCAPSULATED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR/BswInterfaces/CanTp_CancelTransmit</ENCAPSULATED-ENTRY-REF>
+                  <IS-SYNCHRONOUS>true</IS-SYNCHRONOUS>
+                </BSW-MODULE-CLIENT-SERVER-ENTRY>
+                <BSW-MODULE-CLIENT-SERVER-ENTRY>
+                  <SHORT-NAME>pCanTp_Transmit</SHORT-NAME>
+                  <ENCAPSULATED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR/BswInterfaces/CanTp_Transmit</ENCAPSULATED-ENTRY-REF>
+                  <IS-SYNCHRONOUS>true</IS-SYNCHRONOUS>
+                </BSW-MODULE-CLIENT-SERVER-ENTRY>
+              </PROVIDED-CLIENT-SERVER-ENTRYS>
+              <INTERNAL-BEHAVIORS>
+                <BSW-INTERNAL-BEHAVIOR>
+                  <SHORT-NAME>IB_CanTp</SHORT-NAME>
+                  <EXCLUSIVE-AREAS>
+                    <EXCLUSIVE-AREA>
+                      <SHORT-NAME>ExclusiveArea</SHORT-NAME>
+                    </EXCLUSIVE-AREA>
+                  </EXCLUSIVE-AREAS>
+                  <ENTITYS>
+                    <BSW-SCHEDULABLE-ENTITY>
+                      <SHORT-NAME>SE_CanTp_MainFunction</SHORT-NAME>
+                      <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
+                      <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
+                      <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR/BswInterfaces/CanTp_MainFunction</IMPLEMENTED-ENTRY-REF>
+                    </BSW-SCHEDULABLE-ENTITY>
+                    <BSW-CALLED-ENTITY>
+                      <SHORT-NAME>CE_CanTp_RxIndication</SHORT-NAME>
+                      <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
+                      <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR/BswInterfaces/CanTp_RxIndication</IMPLEMENTED-ENTRY-REF>
+                    </BSW-CALLED-ENTITY>
+                    <BSW-CALLED-ENTITY>
+                      <SHORT-NAME>CE_CanTp_TxConfirmation</SHORT-NAME>
+                      <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
+                      <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR/BswInterfaces/CanTp_TxConfirmation</IMPLEMENTED-ENTRY-REF>
+                    </BSW-CALLED-ENTITY>
+                    <BSW-CALLED-ENTITY>
+                      <SHORT-NAME>CE_CanTp_CancelReceive</SHORT-NAME>
+                      <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
+                      <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR/BswInterfaces/CanTp_CancelReceive</IMPLEMENTED-ENTRY-REF>
+                    </BSW-CALLED-ENTITY>
+                    <BSW-CALLED-ENTITY>
+                      <SHORT-NAME>CE_CanTp_CancelTransmit</SHORT-NAME>
+                      <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
+                      <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR/BswInterfaces/CanTp_CancelTransmit</IMPLEMENTED-ENTRY-REF>
+                    </BSW-CALLED-ENTITY>
+                    <BSW-CALLED-ENTITY>
+                      <SHORT-NAME>CE_CanTp_Transmit</SHORT-NAME>
+                      <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
+                      <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR/BswInterfaces/CanTp_Transmit</IMPLEMENTED-ENTRY-REF>
+                    </BSW-CALLED-ENTITY>
+                  </ENTITYS>
+                  <EVENTS>
+                    <BSW-TIMING-EVENT>
+                      <SHORT-NAME>TE_CanTp_MainFunction</SHORT-NAME>
+                      <STARTS-ON-EVENT-REF DEST="BSW-SCHEDULABLE-ENTITY">/AUTOSAR/BswOverviews/CanTp/IB_CanTp/SE_CanTp_MainFunction</STARTS-ON-EVENT-REF>
+                      <PERIOD>0.005</PERIOD>
+                    </BSW-TIMING-EVENT>
+                    <BSW-OPERATION-INVOKED-EVENT>
+                      <SHORT-NAME>OIE_CanTp_RxIndication</SHORT-NAME>
+                      <STARTS-ON-EVENT-REF DEST="BSW-CALLED-ENTITY">/AUTOSAR/BswOverviews/CanTp/IB_CanTp/CE_CanTp_RxIndication</STARTS-ON-EVENT-REF>
+                      <ENTRY-REF DEST="BSW-MODULE-CLIENT-SERVER-ENTRY">/AUTOSAR/BswOverviews/CanTp/pCanTp_RxIndication</ENTRY-REF>
+                    </BSW-OPERATION-INVOKED-EVENT>
+                    <BSW-OPERATION-INVOKED-EVENT>
+                      <SHORT-NAME>OIE_CanTp_TxConfirmation</SHORT-NAME>
+                      <STARTS-ON-EVENT-REF DEST="BSW-CALLED-ENTITY">/AUTOSAR/BswOverviews/CanTp/IB_CanTp/CE_CanTp_TxConfirmation</STARTS-ON-EVENT-REF>
+                      <ENTRY-REF DEST="BSW-MODULE-CLIENT-SERVER-ENTRY">/AUTOSAR/BswOverviews/CanTp/pCanTp_TxConfirmation</ENTRY-REF>
+                    </BSW-OPERATION-INVOKED-EVENT>
+                    <BSW-OPERATION-INVOKED-EVENT>
+                      <SHORT-NAME>OIE_CanTp_CancelReceive</SHORT-NAME>
+                      <STARTS-ON-EVENT-REF DEST="BSW-CALLED-ENTITY">/AUTOSAR/BswOverviews/CanTp/IB_CanTp/CE_CanTp_CancelReceive</STARTS-ON-EVENT-REF>
+                      <ENTRY-REF DEST="BSW-MODULE-CLIENT-SERVER-ENTRY">/AUTOSAR/BswOverviews/CanTp/pCanTp_CancelReceive</ENTRY-REF>
+                    </BSW-OPERATION-INVOKED-EVENT>
+                    <BSW-OPERATION-INVOKED-EVENT>
+                      <SHORT-NAME>OIE_CanTp_CancelTransmit</SHORT-NAME>
+                      <STARTS-ON-EVENT-REF DEST="BSW-CALLED-ENTITY">/AUTOSAR/BswOverviews/CanTp/IB_CanTp/CE_CanTp_CancelTransmit</STARTS-ON-EVENT-REF>
+                      <ENTRY-REF DEST="BSW-MODULE-CLIENT-SERVER-ENTRY">/AUTOSAR/BswOverviews/CanTp/pCanTp_CancelTransmit</ENTRY-REF>
+                    </BSW-OPERATION-INVOKED-EVENT>
+                    <BSW-OPERATION-INVOKED-EVENT>
+                      <SHORT-NAME>OIE_CanTp_Transmit</SHORT-NAME>
+                      <STARTS-ON-EVENT-REF DEST="BSW-CALLED-ENTITY">/AUTOSAR/BswOverviews/CanTp/IB_CanTp/CE_CanTp_Transmit</STARTS-ON-EVENT-REF>
+                      <ENTRY-REF DEST="BSW-MODULE-CLIENT-SERVER-ENTRY">/AUTOSAR/BswOverviews/CanTp/pCanTp_Transmit</ENTRY-REF>
+                    </BSW-OPERATION-INVOKED-EVENT>
+                  </EVENTS>
+                </BSW-INTERNAL-BEHAVIOR>
+              </INTERNAL-BEHAVIORS>
+            </BSW-MODULE-DESCRIPTION>
+          </ELEMENTS>
+        </AR-PACKAGE>
+        <AR-PACKAGE>
+          <SHORT-NAME>BswImplementations</SHORT-NAME>
+          <ELEMENTS>
+            <BSW-IMPLEMENTATION>
+              <SHORT-NAME>Imp_CanTp</SHORT-NAME>
+              <CODE-DESCRIPTORS>
+                <CODE>
+                  <SHORT-NAME>code_0</SHORT-NAME>
+                  <ARTIFACT-DESCRIPTORS>
+                    <AUTOSAR-ENGINEERING-OBJECT>
+                      <SHORT-LABEL>ComStack_Types.h</SHORT-LABEL>
+                      <CATEGORY>SWHDR</CATEGORY>
+                    </AUTOSAR-ENGINEERING-OBJECT>
+                  </ARTIFACT-DESCRIPTORS>
+                </CODE>
+              </CODE-DESCRIPTORS>
+              <PROGRAMMING-LANGUAGE>C</PROGRAMMING-LANGUAGE>
+              <SW-VERSION>2.1.2</SW-VERSION>
+              <VENDOR-ID>62</VENDOR-ID>
+              <AR-RELEASE-VERSION>4.5.0</AR-RELEASE-VERSION>
+              <BEHAVIOR-REF DEST="BSW-INTERNAL-BEHAVIOR">/AUTOSAR/BswOverviews/CanTp/IB_CanTp</BEHAVIOR-REF>
+            </BSW-IMPLEMENTATION>
+          </ELEMENTS>
+        </AR-PACKAGE>
+        <AR-PACKAGE>
+          <SHORT-NAME>DataTypes</SHORT-NAME>
+        </AR-PACKAGE>
+        <AR-PACKAGE>
+          <SHORT-NAME>BswInterfaces</SHORT-NAME>
+          <ELEMENTS>
+            <BSW-MODULE-ENTRY>
+              <SHORT-NAME>CanTp_MainFunction</SHORT-NAME>
+              <IS-SYNCHRONOUS>true</IS-SYNCHRONOUS>
+              <CALL-TYPE>SCHEDULED</CALL-TYPE>
+              <EXECUTION-CONTEXT>TASK</EXECUTION-CONTEXT>
+              <SW-SERVICE-IMPL-POLICY>STANDARD</SW-SERVICE-IMPL-POLICY>
+            </BSW-MODULE-ENTRY>
+            <BSW-MODULE-ENTRY>
+              <SHORT-NAME>CanTp_RxIndication</SHORT-NAME>
+              <SERVICE-ID>66</SERVICE-ID>
+              <IS-SYNCHRONOUS>true</IS-SYNCHRONOUS>
+              <CALL-TYPE>CALLBACK</CALL-TYPE>
+              <EXECUTION-CONTEXT>UNSPECIFIED</EXECUTION-CONTEXT>
+              <SW-SERVICE-IMPL-POLICY>STANDARD</SW-SERVICE-IMPL-POLICY>
+              <ARGUMENTS>
+                <SW-SERVICE-ARG>
+                  <SHORT-NAME>RxPduId</SHORT-NAME>
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <DIRECTION>IN</DIRECTION>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR/DataTypes/PduInfoType</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </SW-SERVICE-ARG>
+                <SW-SERVICE-ARG>
+                  <SHORT-NAME>PduInfoPtr</SHORT-NAME>
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <DIRECTION>INOUT</DIRECTION>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR/DataTypes/PduInfoType</IMPLEMENTATION-DATA-TYPE-REF>
+                        <SW-IMPL-POLICY>CONST</SW-IMPL-POLICY>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </SW-SERVICE-ARG>
+              </ARGUMENTS>
+            </BSW-MODULE-ENTRY>
+            <BSW-MODULE-ENTRY>
+              <SHORT-NAME>CanTp_TxConfirmation</SHORT-NAME>
+              <SERVICE-ID>64</SERVICE-ID>
+              <IS-SYNCHRONOUS>true</IS-SYNCHRONOUS>
+              <CALL-TYPE>CALLBACK</CALL-TYPE>
+              <EXECUTION-CONTEXT>UNSPECIFIED</EXECUTION-CONTEXT>
+              <SW-SERVICE-IMPL-POLICY>STANDARD</SW-SERVICE-IMPL-POLICY>
+              <ARGUMENTS>
+                <SW-SERVICE-ARG>
+                  <SHORT-NAME>TxPduId</SHORT-NAME>
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <DIRECTION>IN</DIRECTION>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR/DataTypes/PduIdType</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </SW-SERVICE-ARG>
+              </ARGUMENTS>
+            </BSW-MODULE-ENTRY>
+            <BSW-MODULE-ENTRY>
+              <SHORT-NAME>CanTp_CancelReceive</SHORT-NAME>
+              <SERVICE-ID>73</SERVICE-ID>
+              <IS-SYNCHRONOUS>true</IS-SYNCHRONOUS>
+              <CALL-TYPE>REGULAR</CALL-TYPE>
+              <EXECUTION-CONTEXT>UNSPECIFIED</EXECUTION-CONTEXT>
+              <SW-SERVICE-IMPL-POLICY>STANDARD</SW-SERVICE-IMPL-POLICY>
+              <RETURN-TYPE>
+                <SHORT-NAME>ret</SHORT-NAME>
+                <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                <DIRECTION>OUT</DIRECTION>
+                <SW-DATA-DEF-PROPS>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR/DataTypes/Std_ReturnType</IMPLEMENTATION-DATA-TYPE-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </SW-DATA-DEF-PROPS>
+              </RETURN-TYPE>
+              <ARGUMENTS>
+                <SW-SERVICE-ARG>
+                  <SHORT-NAME>RxPduId</SHORT-NAME>
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <DIRECTION>IN</DIRECTION>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR/DataTypes/PduIdType</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </SW-SERVICE-ARG>
+              </ARGUMENTS>
+            </BSW-MODULE-ENTRY>
+            <BSW-MODULE-ENTRY>
+              <SHORT-NAME>CanTp_CancelTransmit</SHORT-NAME>
+              <SERVICE-ID>74</SERVICE-ID>
+              <IS-SYNCHRONOUS>true</IS-SYNCHRONOUS>
+              <CALL-TYPE>REGULAR</CALL-TYPE>
+              <EXECUTION-CONTEXT>UNSPECIFIED</EXECUTION-CONTEXT>
+              <SW-SERVICE-IMPL-POLICY>STANDARD</SW-SERVICE-IMPL-POLICY>
+              <RETURN-TYPE>
+                <SHORT-NAME>ret</SHORT-NAME>
+                <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                <DIRECTION>OUT</DIRECTION>
+                <SW-DATA-DEF-PROPS>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR/DataTypes/Std_ReturnType</IMPLEMENTATION-DATA-TYPE-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </SW-DATA-DEF-PROPS>
+              </RETURN-TYPE>
+              <ARGUMENTS>
+                <SW-SERVICE-ARG>
+                  <SHORT-NAME>TxPduId</SHORT-NAME>
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <DIRECTION>IN</DIRECTION>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR/DataTypes/PduIdType</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </SW-SERVICE-ARG>
+              </ARGUMENTS>
+            </BSW-MODULE-ENTRY>
+            <BSW-MODULE-ENTRY>
+              <SHORT-NAME>CanTp_Transmit</SHORT-NAME>
+              <SERVICE-ID>76</SERVICE-ID>
+              <IS-SYNCHRONOUS>true</IS-SYNCHRONOUS>
+              <CALL-TYPE>REGULAR</CALL-TYPE>
+              <EXECUTION-CONTEXT>UNSPECIFIED</EXECUTION-CONTEXT>
+              <SW-SERVICE-IMPL-POLICY>STANDARD</SW-SERVICE-IMPL-POLICY>
+              <RETURN-TYPE>
+                <SHORT-NAME>ret</SHORT-NAME>
+                <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                <DIRECTION>OUT</DIRECTION>
+                <SW-DATA-DEF-PROPS>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR/DataTypes/Std_ReturnType</IMPLEMENTATION-DATA-TYPE-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </SW-DATA-DEF-PROPS>
+              </RETURN-TYPE>
+              <ARGUMENTS>
+                <SW-SERVICE-ARG>
+                  <SHORT-NAME>TxPduId</SHORT-NAME>
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <DIRECTION>IN</DIRECTION>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR/DataTypes/PduIdType</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </SW-SERVICE-ARG>
+                <SW-SERVICE-ARG>
+                  <SHORT-NAME>PduInfoPtr</SHORT-NAME>
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <DIRECTION>INOUT</DIRECTION>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR/DataTypes/PduInfoType</IMPLEMENTATION-DATA-TYPE-REF>
+                        <SW-IMPL-POLICY>CONST</SW-IMPL-POLICY>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </SW-SERVICE-ARG>
+              </ARGUMENTS>
+            </BSW-MODULE-ENTRY>
+          </ELEMENTS>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

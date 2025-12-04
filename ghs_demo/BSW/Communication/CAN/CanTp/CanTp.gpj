@@ -1,0 +1,9 @@
+#!gbuild
+[Subproject]
+CanTp_Internal.c
+CanTp.c
+CanTp_Types.h
+CanTp_MemMap.h
+CanTp_Internal.h
+CanTp_Cbk.h
+CanTp.h

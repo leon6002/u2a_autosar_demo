@@ -1,0 +1,4 @@
+#!gbuild
+[Subproject]
+BSW_Config\BSW_Config.gpj
+MCAL_Config\MCAL_Config.gpj

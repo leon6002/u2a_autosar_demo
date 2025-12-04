@@ -1,0 +1,7 @@
+#!gbuild
+[Subproject]
+Mcu_LLDriver.c
+VMON\VMON.gpj
+RAM\RAM.gpj
+ECM\ECM.gpj
+CLK\CLK.gpj

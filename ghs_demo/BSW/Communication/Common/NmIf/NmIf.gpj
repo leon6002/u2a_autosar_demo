@@ -1,0 +1,8 @@
+#!gbuild
+[Subproject]
+Nm.c
+NmStack_Types.h
+Nm_MemMap.h
+Nm_Internal.h
+Nm_Cbk.h
+Nm.h

@@ -1,0 +1,5 @@
+#!gbuild
+[Subproject]
+Gpt_TAUD_Ram.c
+Gpt_TAUD_LLDriver.c
+Gpt_TAUD_Irq.c

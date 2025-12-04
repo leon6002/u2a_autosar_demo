@@ -1,0 +1,10 @@
+#!gbuild
+defineConfig (Debug   dbg debug.gpc)
+defineConfig (Release rel release.gpc)
+primaryTarget=v800_standalone.tgt
+#component top_level_project
+[Project]
+	-O0
+	-large_sda
+	
+ProjectSetting.gpj		[Program]

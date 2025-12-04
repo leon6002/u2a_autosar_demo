@@ -1,0 +1,4 @@
+#!gbuild
+[Subproject]
+src\src.gpj
+include\include.gpj

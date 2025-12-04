@@ -1,0 +1,10 @@
+#!gbuild
+[Subproject]
+Os\Os.gpj
+WdgM\WdgM.gpj
+WdgIf\WdgIf.gpj
+EcuM\EcuM.gpj
+Det\Det.gpj
+Dem\Dem.gpj
+ComM\ComM.gpj
+BswM\BswM.gpj

@@ -1,0 +1,7 @@
+#!gbuild
+[Subproject]
+Gpt_TAU_Ram.c
+TAUJ\TAUJ.gpj
+TAUD\TAUD.gpj
+OSTM\OSTM.gpj
+ATU\ATU.gpj

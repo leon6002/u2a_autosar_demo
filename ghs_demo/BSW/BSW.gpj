@@ -1,0 +1,9 @@
+#!gbuild
+[Subproject]
+CommonInclude\CommonInclude.gpj
+Config\Config.gpj
+MCAL\MCAL.gpj
+SystemServices\SystemServices.gpj
+Memory\Memory.gpj
+Libraries\Libraries.gpj
+Communication\Communication.gpj

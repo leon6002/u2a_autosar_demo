@@ -1,0 +1,8 @@
+#!gbuild
+[Subproject]
+CanSM.c
+CanSM_TxTimeoutException.h
+CanSM_MemMap.h
+CanSM_Cbk.h
+CanSM_BswM.h
+CanSM.h

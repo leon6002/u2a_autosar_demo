@@ -1,0 +1,14 @@
+#!gbuild
+[Subproject]
+EcuM_Up.c
+EcuM_StartUp.c
+EcuM_Sleep.c
+EcuM_Shutdown.c
+EcuM_AlarmClock.c
+EcuM.c
+EcuM_Types.h
+EcuM_MemMap.h
+EcuM_Internal.h
+EcuM_Externals.h
+EcuM_Cbk.h
+EcuM.h

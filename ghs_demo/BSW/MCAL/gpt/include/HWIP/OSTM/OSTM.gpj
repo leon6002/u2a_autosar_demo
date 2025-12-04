@@ -1,0 +1,6 @@
+#!gbuild
+[Subproject]
+Gpt_OSTM_Ram.h
+Gpt_OSTM_PBTypes.h
+Gpt_OSTM_LLDriver.h
+Gpt_OSTM_Irq.h

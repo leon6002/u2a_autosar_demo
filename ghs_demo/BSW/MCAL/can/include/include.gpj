@@ -1,0 +1,14 @@
+#!gbuild
+[Subproject]
+Can_Version.h
+Can_Ram.h
+Can_PBTypes.h
+Can_MultiInstance.h
+Can_ModeCntrl.h
+Can_Mapping.h
+Can_MainServ.h
+Can_LTTypes.h
+Can_Irq.h
+Can_CommonRegStruct.h
+Can.h
+U2Ax\U2Ax.gpj

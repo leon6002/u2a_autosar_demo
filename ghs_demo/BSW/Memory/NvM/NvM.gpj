@@ -1,0 +1,9 @@
+#!gbuild
+[Subproject]
+NvM_Inter.c
+NvM.c
+NvM_Types.h
+NvM_MemMap.h
+NvM_Inter.h
+NvM_Cbk.h
+NvM.h

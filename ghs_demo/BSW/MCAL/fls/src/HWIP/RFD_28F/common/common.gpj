@@ -1,0 +1,4 @@
+#!gbuild
+[Subproject]
+r_rfd_common_definition.c
+r_rfd_common_api.c

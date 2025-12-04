@@ -1,0 +1,9 @@
+#!gbuild
+[Subproject]
+Port_Version.h
+Port_Types.h
+Port_Ram.h
+Port_PBTypes.h
+Port_LLDriver.h
+Port.h
+U2A16_BGA292\U2A16_BGA292.gpj

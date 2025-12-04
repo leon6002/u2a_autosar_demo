@@ -1,0 +1,14 @@
+#!gbuild
+[Subproject]
+DcmDsp.c
+DcmDsl.c
+DcmDsd.c
+Dcm_Ext.c
+Dcm.c
+Dcm_Types.h
+Dcm_MemMap.h
+Dcm_Internal.h
+Dcm_Ext.h
+Dcm_Cbk.h
+Dcm.h
+UDS\UDS.gpj

@@ -1,0 +1,4 @@
+#!gbuild
+[Subproject]
+CanGeneral\CanGeneral.gpj
+Rte\Rte.gpj

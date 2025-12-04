@@ -1,0 +1,4 @@
+#!gbuild
+[Subproject]
+Common\Common.gpj
+CAN\CAN.gpj

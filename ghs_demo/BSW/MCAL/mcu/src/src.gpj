@@ -1,0 +1,7 @@
+#!gbuild
+[Subproject]
+Mcu_Version.c
+Mcu_Ram.c
+Mcu_Irq.c
+Mcu.c
+U2Ax\U2Ax.gpj

@@ -1,0 +1,5 @@
+#!gbuild
+[Subproject]
+Gpt_ATU_Ram.c
+Gpt_ATU_LLDriver.c
+Gpt_ATU_Irq.c

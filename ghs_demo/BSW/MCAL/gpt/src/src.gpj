@@ -1,0 +1,6 @@
+#!gbuild
+[Subproject]
+Gpt_Version.c
+Gpt_Ram.c
+Gpt.c
+HWIP\HWIP.gpj

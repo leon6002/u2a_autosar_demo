@@ -1,0 +1,6 @@
+#!gbuild
+[Subproject]
+Wdg_Version.c
+Wdg_Ram.c
+Wdg.c
+WDTB\WDTB.gpj

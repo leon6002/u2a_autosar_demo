@@ -1,0 +1,15 @@
+#!gbuild
+[Subproject]
+Dem_SubExt.c
+Dem_OBD.c
+Dem_J1939.c
+Dem_Ext.c
+Dem_Dcm.c
+Dem.c
+Dem_Types.h
+Dem_MemMap.h
+Dem_Internal.h
+Dem_Ext.h
+Dem_Dcm.h
+Dem_CfgTypes.h
+Dem.h

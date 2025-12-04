@@ -1,0 +1,13 @@
+#!gbuild
+[Subproject]
+Arch_Trap.c
+Arch_Processor.c
+Arch_Mpu.c
+Arch_Irq.c
+Arch_Extend.c
+Arch_Processor.h
+Arch_Mpu.h
+Arch_Irq.h
+Arch_Extend.h
+Arch_Define.h
+Arch_PortAsm.850

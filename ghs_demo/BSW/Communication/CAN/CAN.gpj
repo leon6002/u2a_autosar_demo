@@ -1,0 +1,6 @@
+#!gbuild
+[Subproject]
+CanTp\CanTp.gpj
+CanSM\CanSM.gpj
+CanNm\CanNm.gpj
+CanIf\CanIf.gpj

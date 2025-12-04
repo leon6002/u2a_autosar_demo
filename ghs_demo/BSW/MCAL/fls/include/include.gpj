@@ -1,0 +1,12 @@
+#!gbuild
+[Subproject]
+Fls_Version.h
+Fls_Types.h
+Fls_RegWrite.h
+Fls_Ram.h
+Fls_PBTypes.h
+Fls_LLDriver.h
+Fls_Irq.h
+Fls_Control.h
+Fls.h
+HWIP\HWIP.gpj

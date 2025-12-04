@@ -1,0 +1,4 @@
+#!gbuild
+[Subproject]
+Wdg_WDTB_LLDriver.c
+Wdg_WDTB_Irq.c

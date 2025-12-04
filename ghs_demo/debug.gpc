@@ -1,0 +1,18 @@
+#!gbuild
+[Build Configuration]
+	-cpu=rh850g4mh
+	-no_misalign_pack
+	-overlap
+	-G
+	-Ogeneral
+	-gtws
+	-c99
+	-e 0x0
+	-reserve_r2
+	-prepare_dispose
+	-inline_prologue
+	-sda=0
+	-large_sda
+	-dual_debug
+	--diag_suppress 47,177
+	-D__DEBUG

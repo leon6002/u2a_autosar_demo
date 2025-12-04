@@ -1,0 +1,7 @@
+#!gbuild
+[Subproject]
+WdgM.c
+WdgM_Type.h
+WdgM_MemMap.h
+WdgM_CfgType.h
+WdgM.h

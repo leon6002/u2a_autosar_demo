@@ -1,0 +1,46 @@
+<?xml version="1.1" encoding="ASCII"?>
+<cn.com.isoft.mal.model:BswBuilderModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:cn.com.isoft.mal.model="http:///cn/com/isoft/mal/model.ecore" name="BSW_Builder" projectName="Demo_RH850U2A16_V2504_BSW_ConfigProject">
+  <ecuConfigurationModels pathValue="BSW_Builder\RH850U2A16\ecuconfig.arxml" projectName="Demo_RH850U2A16_V2504_BSW_ConfigProject">
+    <moduleKindModels kindName="COM">
+      <moduleModels moduleName="CanIf" projectName="Demo_RH850U2A16_V2504_BSW_ConfigProject" pathValue="BSW_Builder\RH850U2A16\ecuconfig.arxml"/>
+      <moduleModels moduleName="CanNm" projectName="Demo_RH850U2A16_V2504_BSW_ConfigProject" pathValue="BSW_Builder\RH850U2A16\ecuconfig.arxml"/>
+      <moduleModels moduleName="CanSM" projectName="Demo_RH850U2A16_V2504_BSW_ConfigProject" pathValue="BSW_Builder\RH850U2A16\ecuconfig.arxml"/>
+      <moduleModels moduleName="Com" projectName="Demo_RH850U2A16_V2504_BSW_ConfigProject" pathValue="BSW_Builder\RH850U2A16\ecuconfig.arxml"/>
+      <moduleModels moduleName="ComM" projectName="Demo_RH850U2A16_V2504_BSW_ConfigProject" pathValue="BSW_Builder\RH850U2A16\ecuconfig.arxml"/>
+      <moduleModels moduleName="EcuC" projectName="Demo_RH850U2A16_V2504_BSW_ConfigProject" pathValue="BSW_Builder\RH850U2A16\ecuconfig.arxml"/>
+      <moduleModels moduleName="Nm" projectName="Demo_RH850U2A16_V2504_BSW_ConfigProject" pathValue="BSW_Builder\RH850U2A16\ecuconfig.arxml"/>
+      <moduleModels moduleName="PduR" projectName="Demo_RH850U2A16_V2504_BSW_ConfigProject" pathValue="BSW_Builder\RH850U2A16\ecuconfig.arxml"/>
+    </moduleKindModels>
+    <moduleKindModels kindName="DIAG">
+      <moduleModels moduleName="CanTp" projectName="Demo_RH850U2A16_V2504_BSW_ConfigProject" pathValue="BSW_Builder\RH850U2A16\ecuconfig.arxml"/>
+      <moduleModels moduleName="Dcm" projectName="Demo_RH850U2A16_V2504_BSW_ConfigProject" pathValue="BSW_Builder\RH850U2A16\ecuconfig.arxml"/>
+      <moduleModels moduleName="Dem" projectName="Demo_RH850U2A16_V2504_BSW_ConfigProject" pathValue="BSW_Builder\RH850U2A16\ecuconfig.arxml"/>
+      <moduleModels moduleName="Det" projectName="Demo_RH850U2A16_V2504_BSW_ConfigProject" pathValue="BSW_Builder\RH850U2A16\ecuconfig.arxml"/>
+    </moduleKindModels>
+    <moduleKindModels kindName="MCAL">
+      <moduleModels moduleName="Can" projectName="Demo_RH850U2A16_V2504_BSW_ConfigProject" pathValue="BSW_Builder\RH850U2A16\ecuconfig.arxml"/>
+      <moduleModels moduleName="Fls" projectName="Demo_RH850U2A16_V2504_BSW_ConfigProject" pathValue="BSW_Builder\RH850U2A16\ecuconfig.arxml"/>
+      <moduleModels moduleName="Gpt" projectName="Demo_RH850U2A16_V2504_BSW_ConfigProject" pathValue="BSW_Builder\RH850U2A16\ecuconfig.arxml"/>
+      <moduleModels moduleName="Mcu" projectName="Demo_RH850U2A16_V2504_BSW_ConfigProject" pathValue="BSW_Builder\RH850U2A16\ecuconfig.arxml"/>
+      <moduleModels moduleName="Port" projectName="Demo_RH850U2A16_V2504_BSW_ConfigProject" pathValue="BSW_Builder\RH850U2A16\ecuconfig.arxml"/>
+    </moduleKindModels>
+    <moduleKindModels kindName="MEM">
+      <moduleModels moduleName="Fee_62" projectName="Demo_RH850U2A16_V2504_BSW_ConfigProject" pathValue="BSW_Builder\RH850U2A16\ecuconfig.arxml"/>
+      <moduleModels moduleName="MemIf" projectName="Demo_RH850U2A16_V2504_BSW_ConfigProject" pathValue="BSW_Builder\RH850U2A16\ecuconfig.arxml"/>
+      <moduleModels moduleName="NvM" projectName="Demo_RH850U2A16_V2504_BSW_ConfigProject" pathValue="BSW_Builder\RH850U2A16\ecuconfig.arxml"/>
+    </moduleKindModels>
+    <moduleKindModels kindName="SYS">
+      <moduleModels moduleName="BswM" projectName="Demo_RH850U2A16_V2504_BSW_ConfigProject" pathValue="BSW_Builder\RH850U2A16\ecuconfig.arxml"/>
+      <moduleModels moduleName="Crc" projectName="Demo_RH850U2A16_V2504_BSW_ConfigProject" pathValue="BSW_Builder\RH850U2A16\ecuconfig.arxml"/>
+      <moduleModels moduleName="EcuM" projectName="Demo_RH850U2A16_V2504_BSW_ConfigProject" pathValue="BSW_Builder\RH850U2A16\ecuconfig.arxml"/>
+      <moduleModels moduleName="Os" projectName="Demo_RH850U2A16_V2504_BSW_ConfigProject" pathValue="BSW_Builder\RH850U2A16\ecuconfig.arxml"/>
+      <moduleModels moduleName="Xfrm" projectName="Demo_RH850U2A16_V2504_BSW_ConfigProject" pathValue="BSW_Builder\RH850U2A16\ecuconfig.arxml"/>
+      <moduleModels moduleName="iRte" projectName="Demo_RH850U2A16_V2504_BSW_ConfigProject" pathValue="BSW_Builder\RH850U2A16\ecuconfig.arxml"/>
+    </moduleKindModels>
+    <moduleKindModels kindName="WDG">
+      <moduleModels moduleName="Wdg" projectName="Demo_RH850U2A16_V2504_BSW_ConfigProject" pathValue="BSW_Builder\RH850U2A16\ecuconfig.arxml"/>
+      <moduleModels moduleName="WdgIf" projectName="Demo_RH850U2A16_V2504_BSW_ConfigProject" pathValue="BSW_Builder\RH850U2A16\ecuconfig.arxml"/>
+      <moduleModels moduleName="WdgM" projectName="Demo_RH850U2A16_V2504_BSW_ConfigProject" pathValue="BSW_Builder\RH850U2A16\ecuconfig.arxml"/>
+    </moduleKindModels>
+  </ecuConfigurationModels>
+</cn.com.isoft.mal.model:BswBuilderModel>

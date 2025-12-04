@@ -1,0 +1,5 @@
+#!gbuild
+[Subproject]
+IStd\IStd.gpj
+E2E\E2E.gpj
+Crc\Crc.gpj

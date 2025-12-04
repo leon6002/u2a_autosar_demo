@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00048.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>AUTOSAR</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>BswOverviews</SHORT-NAME>
+          <ELEMENTS>
+            <BSW-MODULE-DESCRIPTION>
+              <SHORT-NAME>Dcm</SHORT-NAME>
+              <IMPLEMENTED-ENTRYS>
+                <BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                  <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR/BswInterfaces/Dcm_MainFunction</BSW-MODULE-ENTRY-REF>
+                </BSW-MODULE-ENTRY-REF-CONDITIONAL>
+              </IMPLEMENTED-ENTRYS>
+              <PROVIDED-CLIENT-SERVER-ENTRYS>
+                <BSW-MODULE-CLIENT-SERVER-ENTRY>
+                  <SHORT-NAME>pDcm_StartOfReception</SHORT-NAME>
+                  <ENCAPSULATED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR/BswInterfaces/Dcm_StartOfReception</ENCAPSULATED-ENTRY-REF>
+                  <IS-REENTRANT>true</IS-REENTRANT>
+                  <IS-SYNCHRONOUS>true</IS-SYNCHRONOUS>
+                </BSW-MODULE-CLIENT-SERVER-ENTRY>
+                <BSW-MODULE-CLIENT-SERVER-ENTRY>
+                  <SHORT-NAME>pDcm_CopyRxData</SHORT-NAME>
+                  <ENCAPSULATED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR/BswInterfaces/Dcm_CopyRxData</ENCAPSULATED-ENTRY-REF>
+                  <IS-REENTRANT>true</IS-REENTRANT>
+                  <IS-SYNCHRONOUS>true</IS-SYNCHRONOUS>
+                </BSW-MODULE-CLIENT-SERVER-ENTRY>
+                <BSW-MODULE-CLIENT-SERVER-ENTRY>
+                  <SHORT-NAME>pDcm_TpRxIndication</SHORT-NAME>
+                  <ENCAPSULATED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR/BswInterfaces/Dcm_TpRxIndication</ENCAPSULATED-ENTRY-REF>
+                  <IS-REENTRANT>true</IS-REENTRANT>
+                  <IS-SYNCHRONOUS>true</IS-SYNCHRONOUS>
+                </BSW-MODULE-CLIENT-SERVER-ENTRY>
+                <BSW-MODULE-CLIENT-SERVER-ENTRY>
+                  <SHORT-NAME>pDcm_CopyTxData</SHORT-NAME>
+                  <ENCAPSULATED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR/BswInterfaces/Dcm_CopyTxData</ENCAPSULATED-ENTRY-REF>
+                  <IS-REENTRANT>true</IS-REENTRANT>
+                  <IS-SYNCHRONOUS>true</IS-SYNCHRONOUS>
+                </BSW-MODULE-CLIENT-SERVER-ENTRY>
+                <BSW-MODULE-CLIENT-SERVER-ENTRY>
+                  <SHORT-NAME>pDcm_TpTxConfirmation</SHORT-NAME>
+                  <ENCAPSULATED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR/BswInterfaces/Dcm_TpTxConfirmation</ENCAPSULATED-ENTRY-REF>
+                  <IS-REENTRANT>true</IS-REENTRANT>
+                  <IS-SYNCHRONOUS>true</IS-SYNCHRONOUS>
+                </BSW-MODULE-CLIENT-SERVER-ENTRY>
+                <BSW-MODULE-CLIENT-SERVER-ENTRY>
+                  <SHORT-NAME>pDcm_TxConfirmation</SHORT-NAME>
+                  <ENCAPSULATED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR/BswInterfaces/Dcm_TxConfirmation</ENCAPSULATED-ENTRY-REF>
+                  <IS-REENTRANT>true</IS-REENTRANT>
+                  <IS-SYNCHRONOUS>true</IS-SYNCHRONOUS>
+                </BSW-MODULE-CLIENT-SERVER-ENTRY>
+              </PROVIDED-CLIENT-SERVER-ENTRYS>
+              <INTERNAL-BEHAVIORS>
+                <BSW-INTERNAL-BEHAVIOR>
+                  <SHORT-NAME>IB_Dcm</SHORT-NAME>
+                  <EXCLUSIVE-AREAS>
+                    <EXCLUSIVE-AREA>
+                      <SHORT-NAME>ExclusiveArea</SHORT-NAME>
+                    </EXCLUSIVE-AREA>
+                  </EXCLUSIVE-AREAS>
+                  <ENTITYS>
+                    <BSW-CALLED-ENTITY>
+                      <SHORT-NAME>CE_Dcm_StartOfReception</SHORT-NAME>
+                      <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
+                      <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR/BswInterfaces/Dcm_StartOfReception</IMPLEMENTED-ENTRY-REF>
+                    </BSW-CALLED-ENTITY>
+                    <BSW-CALLED-ENTITY>
+                      <SHORT-NAME>CE_Dcm_CopyRxData</SHORT-NAME>
+                      <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
+                      <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR/BswInterfaces/Dcm_CopyRxData</IMPLEMENTED-ENTRY-REF>
+                    </BSW-CALLED-ENTITY>
+                    <BSW-CALLED-ENTITY>
+                      <SHORT-NAME>CE_Dcm_TpRxIndication</SHORT-NAME>
+                      <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
+                      <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR/BswInterfaces/Dcm_TpRxIndication</IMPLEMENTED-ENTRY-REF>
+                    </BSW-CALLED-ENTITY>
+                    <BSW-CALLED-ENTITY>
+                      <SHORT-NAME>CE_Dcm_CopyTxData</SHORT-NAME>
+                      <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
+                      <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR/BswInterfaces/Dcm_CopyTxData</IMPLEMENTED-ENTRY-REF>
+                    </BSW-CALLED-ENTITY>
+                    <BSW-CALLED-ENTITY>
+                      <SHORT-NAME>CE_Dcm_TpTxConfirmation</SHORT-NAME>
+                      <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
+                      <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR/BswInterfaces/Dcm_TpTxConfirmation</IMPLEMENTED-ENTRY-REF>
+                    </BSW-CALLED-ENTITY>
+                    <BSW-CALLED-ENTITY>
+                      <SHORT-NAME>CE_Dcm_TxConfirmation</SHORT-NAME>
+                      <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
+                      <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR/BswInterfaces/Dcm_TxConfirmation</IMPLEMENTED-ENTRY-REF>
+                    </BSW-CALLED-ENTITY>
+                    <BSW-SCHEDULABLE-ENTITY>
+                      <SHORT-NAME>SE_Dcm_MainFunction</SHORT-NAME>
+                      <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
+                      <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
+                      <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR/BswInterfaces/Dcm_MainFunction</IMPLEMENTED-ENTRY-REF>
+                    </BSW-SCHEDULABLE-ENTITY>
+                  </ENTITYS>
+                  <EVENTS>
+                    <BSW-TIMING-EVENT>
+                      <SHORT-NAME>TE_Dcm_MainFunction</SHORT-NAME>
+                      <STARTS-ON-EVENT-REF DEST="BSW-SCHEDULABLE-ENTITY">/AUTOSAR/BswOverviews/Dcm/IB_Dcm/SE_Dcm_MainFunction</STARTS-ON-EVENT-REF>
+                      <PERIOD>0.005</PERIOD>
+                    </BSW-TIMING-EVENT>
+                    <BSW-OPERATION-INVOKED-EVENT>
+                      <SHORT-NAME>OIE_Dcm_StartOfReception</SHORT-NAME>
+                      <CATEGORY>DIRECT_SEQUENCE</CATEGORY>
+                      <STARTS-ON-EVENT-REF DEST="BSW-CALLED-ENTITY">/AUTOSAR/BswOverviews/Dcm/IB_Dcm/CE_Dcm_StartOfReception</STARTS-ON-EVENT-REF>
+                      <ENTRY-REF DEST="BSW-MODULE-CLIENT-SERVER-ENTRY">/AUTOSAR/BswOverviews/Dcm/pDcm_StartOfReception</ENTRY-REF>
+                    </BSW-OPERATION-INVOKED-EVENT>
+                    <BSW-OPERATION-INVOKED-EVENT>
+                      <SHORT-NAME>OIE_Dcm_CopyRxData</SHORT-NAME>
+                      <CATEGORY>DIRECT_SEQUENCE</CATEGORY>
+                      <STARTS-ON-EVENT-REF DEST="BSW-CALLED-ENTITY">/AUTOSAR/BswOverviews/Dcm/IB_Dcm/CE_Dcm_CopyRxData</STARTS-ON-EVENT-REF>
+                      <ENTRY-REF DEST="BSW-MODULE-CLIENT-SERVER-ENTRY">/AUTOSAR/BswOverviews/Dcm/pDcm_CopyRxData</ENTRY-REF>
+                    </BSW-OPERATION-INVOKED-EVENT>
+                    <BSW-OPERATION-INVOKED-EVENT>
+                      <SHORT-NAME>OIE_Dcm_TpRxIndication</SHORT-NAME>
+                      <CATEGORY>DIRECT_SEQUENCE</CATEGORY>
+                      <STARTS-ON-EVENT-REF DEST="BSW-CALLED-ENTITY">/AUTOSAR/BswOverviews/Dcm/IB_Dcm/CE_Dcm_TpRxIndication</STARTS-ON-EVENT-REF>
+                      <ENTRY-REF DEST="BSW-MODULE-CLIENT-SERVER-ENTRY">/AUTOSAR/BswOverviews/Dcm/pDcm_TpRxIndication</ENTRY-REF>
+                    </BSW-OPERATION-INVOKED-EVENT>
+                    <BSW-OPERATION-INVOKED-EVENT>
+                      <SHORT-NAME>OIE_Dcm_CopyTxData</SHORT-NAME>
+                      <CATEGORY>DIRECT_SEQUENCE</CATEGORY>
+                      <STARTS-ON-EVENT-REF DEST="BSW-CALLED-ENTITY">/AUTOSAR/BswOverviews/Dcm/IB_Dcm/CE_Dcm_CopyTxData</STARTS-ON-EVENT-REF>
+                      <ENTRY-REF DEST="BSW-MODULE-CLIENT-SERVER-ENTRY">/AUTOSAR/BswOverviews/Dcm/pDcm_CopyTxData</ENTRY-REF>
+                    </BSW-OPERATION-INVOKED-EVENT>
+                    <BSW-OPERATION-INVOKED-EVENT>
+                      <SHORT-NAME>OIE_Dcm_TpTxConfirmation</SHORT-NAME>
+                      <STARTS-ON-EVENT-REF DEST="BSW-CALLED-ENTITY">/AUTOSAR/BswOverviews/Dcm/IB_Dcm/CE_Dcm_TpTxConfirmation</STARTS-ON-EVENT-REF>
+                      <ENTRY-REF DEST="BSW-MODULE-CLIENT-SERVER-ENTRY">/AUTOSAR/BswOverviews/Dcm/pDcm_TpTxConfirmation</ENTRY-REF>
+                    </BSW-OPERATION-INVOKED-EVENT>
+                    <BSW-OPERATION-INVOKED-EVENT>
+                      <SHORT-NAME>OIE_Dcm_TxConfirmation</SHORT-NAME>
+                      <CATEGORY>DIRECT_SEQUENCE</CATEGORY>
+                      <STARTS-ON-EVENT-REF DEST="BSW-CALLED-ENTITY">/AUTOSAR/BswOverviews/Dcm/IB_Dcm/CE_Dcm_TxConfirmation</STARTS-ON-EVENT-REF>
+                      <ENTRY-REF DEST="BSW-MODULE-CLIENT-SERVER-ENTRY">/AUTOSAR/BswOverviews/Dcm/pDcm_TxConfirmation</ENTRY-REF>
+                    </BSW-OPERATION-INVOKED-EVENT>
+                  </EVENTS>
+                  <SCHEDULER-NAME-PREFIXS>
+                    <BSW-SCHEDULER-NAME-PREFIX>
+                      <SHORT-NAME>Prefix_Dcm_</SHORT-NAME>
+                      <SYMBOL></SYMBOL>
+                    </BSW-SCHEDULER-NAME-PREFIX>
+                  </SCHEDULER-NAME-PREFIXS>
+                  <DISTINGUISHED-PARTITIONS>
+                    <BSW-DISTINGUISHED-PARTITION>
+                      <SHORT-NAME>Dcm_EcucPartition</SHORT-NAME>
+                    </BSW-DISTINGUISHED-PARTITION>
+                  </DISTINGUISHED-PARTITIONS>
+                </BSW-INTERNAL-BEHAVIOR>
+              </INTERNAL-BEHAVIORS>
+            </BSW-MODULE-DESCRIPTION>
+          </ELEMENTS>
+        </AR-PACKAGE>
+        <AR-PACKAGE>
+          <SHORT-NAME>BswImplementations</SHORT-NAME>
+          <ELEMENTS>
+            <BSW-IMPLEMENTATION>
+              <SHORT-NAME>Imp_Dcm</SHORT-NAME>
+              <CODE-DESCRIPTORS>
+                <CODE>
+                  <SHORT-NAME>code_0</SHORT-NAME>
+                  <ARTIFACT-DESCRIPTORS>
+                    <AUTOSAR-ENGINEERING-OBJECT>
+                      <SHORT-LABEL>ComStack_Types.h</SHORT-LABEL>
+                      <CATEGORY>SWHDR</CATEGORY>
+                    </AUTOSAR-ENGINEERING-OBJECT>
+                  </ARTIFACT-DESCRIPTORS>
+                </CODE>
+              </CODE-DESCRIPTORS>
+              <PROGRAMMING-LANGUAGE>C</PROGRAMMING-LANGUAGE>
+              <SW-VERSION>2.1.2</SW-VERSION>
+              <VENDOR-ID>62</VENDOR-ID>
+              <AR-RELEASE-VERSION>4.2.2</AR-RELEASE-VERSION>
+              <BEHAVIOR-REF DEST="BSW-INTERNAL-BEHAVIOR">/AUTOSAR/BswOverviews/Dcm/IB_Dcm</BEHAVIOR-REF>
+            </BSW-IMPLEMENTATION>
+          </ELEMENTS>
+        </AR-PACKAGE>
+        <AR-PACKAGE>
+          <SHORT-NAME>BswInterfaces</SHORT-NAME>
+          <ELEMENTS>
+            <BSW-MODULE-ENTRY>
+              <SHORT-NAME>Dcm_MainFunction</SHORT-NAME>
+              <IS-SYNCHRONOUS>true</IS-SYNCHRONOUS>
+              <CALL-TYPE>SCHEDULED</CALL-TYPE>
+              <EXECUTION-CONTEXT>TASK</EXECUTION-CONTEXT>
+              <SW-SERVICE-IMPL-POLICY>STANDARD</SW-SERVICE-IMPL-POLICY>
+            </BSW-MODULE-ENTRY>
+            <BSW-MODULE-ENTRY>
+              <SHORT-NAME>Dcm_StartOfReception</SHORT-NAME>
+              <SERVICE-ID>70</SERVICE-ID>
+              <IS-REENTRANT>true</IS-REENTRANT>
+              <IS-SYNCHRONOUS>true</IS-SYNCHRONOUS>
+              <CALL-TYPE>CALLBACK</CALL-TYPE>
+              <EXECUTION-CONTEXT>UNSPECIFIED</EXECUTION-CONTEXT>
+              <SW-SERVICE-IMPL-POLICY>STANDARD</SW-SERVICE-IMPL-POLICY>
+              <RETURN-TYPE>
+                <SHORT-NAME>ret</SHORT-NAME>
+                <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                <DIRECTION>OUT</DIRECTION>
+                <SW-DATA-DEF-PROPS>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR/DataTypes/BufReq_ReturnType</IMPLEMENTATION-DATA-TYPE-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </SW-DATA-DEF-PROPS>
+              </RETURN-TYPE>
+              <ARGUMENTS>
+                <SW-SERVICE-ARG>
+                  <SHORT-NAME>id</SHORT-NAME>
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <DIRECTION>IN</DIRECTION>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR/DataTypes/PduIdType</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </SW-SERVICE-ARG>
+                <SW-SERVICE-ARG>
+                  <SHORT-NAME>info</SHORT-NAME>
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <DIRECTION>INOUT</DIRECTION>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR/DataTypes/PduInfoType</IMPLEMENTATION-DATA-TYPE-REF>
+                        <SW-IMPL-POLICY>CONST</SW-IMPL-POLICY>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </SW-SERVICE-ARG>
+                <SW-SERVICE-ARG>
+                  <SHORT-NAME>TpSduLength</SHORT-NAME>
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <DIRECTION>IN</DIRECTION>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR/DataTypes/PduLengthType</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </SW-SERVICE-ARG>
+                <SW-SERVICE-ARG>
+                  <SHORT-NAME>bufferSizePtr</SHORT-NAME>
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <DIRECTION>OUT</DIRECTION>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR/DataTypes/PduLengthType</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </SW-SERVICE-ARG>
+              </ARGUMENTS>
+            </BSW-MODULE-ENTRY>
+            <BSW-MODULE-ENTRY>
+              <SHORT-NAME>Dcm_CopyRxData</SHORT-NAME>
+              <SERVICE-ID>68</SERVICE-ID>
+              <IS-REENTRANT>true</IS-REENTRANT>
+              <IS-SYNCHRONOUS>true</IS-SYNCHRONOUS>
+              <CALL-TYPE>CALLBACK</CALL-TYPE>
+              <EXECUTION-CONTEXT>UNSPECIFIED</EXECUTION-CONTEXT>
+              <SW-SERVICE-IMPL-POLICY>STANDARD</SW-SERVICE-IMPL-POLICY>
+              <RETURN-TYPE>
+                <SHORT-NAME>ret</SHORT-NAME>
+                <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                <DIRECTION>OUT</DIRECTION>
+                <SW-DATA-DEF-PROPS>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR/DataTypes/BufReq_ReturnType</IMPLEMENTATION-DATA-TYPE-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </SW-DATA-DEF-PROPS>
+              </RETURN-TYPE>
+              <ARGUMENTS>
+                <SW-SERVICE-ARG>
+                  <SHORT-NAME>id</SHORT-NAME>
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <DIRECTION>IN</DIRECTION>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR/DataTypes/PduIdType</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </SW-SERVICE-ARG>
+                <SW-SERVICE-ARG>
+                  <SHORT-NAME>info</SHORT-NAME>
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <DIRECTION>INOUT</DIRECTION>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR/DataTypes/PduInfoType</IMPLEMENTATION-DATA-TYPE-REF>
+                        <SW-IMPL-POLICY>CONST</SW-IMPL-POLICY>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </SW-SERVICE-ARG>
+                <SW-SERVICE-ARG>
+                  <SHORT-NAME>bufferSizePtr</SHORT-NAME>
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <DIRECTION>OUT</DIRECTION>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR/DataTypes/PduLengthType</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </SW-SERVICE-ARG>
+              </ARGUMENTS>
+            </BSW-MODULE-ENTRY>
+            <BSW-MODULE-ENTRY>
+              <SHORT-NAME>Dcm_TpRxIndication</SHORT-NAME>
+              <SERVICE-ID>69</SERVICE-ID>
+              <IS-REENTRANT>true</IS-REENTRANT>
+              <IS-SYNCHRONOUS>true</IS-SYNCHRONOUS>
+              <CALL-TYPE>CALLBACK</CALL-TYPE>
+              <EXECUTION-CONTEXT>UNSPECIFIED</EXECUTION-CONTEXT>
+              <SW-SERVICE-IMPL-POLICY>STANDARD</SW-SERVICE-IMPL-POLICY>
+              <ARGUMENTS>
+                <SW-SERVICE-ARG>
+                  <SHORT-NAME>id</SHORT-NAME>
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <DIRECTION>IN</DIRECTION>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR/DataTypes/PduIdType</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </SW-SERVICE-ARG>
+                <SW-SERVICE-ARG>
+                  <SHORT-NAME>result</SHORT-NAME>
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <DIRECTION>IN</DIRECTION>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR/DataTypes/Std_ReturnType</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </SW-SERVICE-ARG>
+              </ARGUMENTS>
+            </BSW-MODULE-ENTRY>
+            <BSW-MODULE-ENTRY>
+              <SHORT-NAME>Dcm_CopyTxData</SHORT-NAME>
+              <SERVICE-ID>67</SERVICE-ID>
+              <IS-REENTRANT>true</IS-REENTRANT>
+              <IS-SYNCHRONOUS>true</IS-SYNCHRONOUS>
+              <CALL-TYPE>CALLBACK</CALL-TYPE>
+              <EXECUTION-CONTEXT>UNSPECIFIED</EXECUTION-CONTEXT>
+              <SW-SERVICE-IMPL-POLICY>STANDARD</SW-SERVICE-IMPL-POLICY>
+              <RETURN-TYPE>
+                <SHORT-NAME>ret</SHORT-NAME>
+                <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                <DIRECTION>OUT</DIRECTION>
+                <SW-DATA-DEF-PROPS>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR/DataTypes/BufReq_ReturnType</IMPLEMENTATION-DATA-TYPE-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </SW-DATA-DEF-PROPS>
+              </RETURN-TYPE>
+              <ARGUMENTS>
+                <SW-SERVICE-ARG>
+                  <SHORT-NAME>id</SHORT-NAME>
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <DIRECTION>IN</DIRECTION>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR/DataTypes/PduIdType</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </SW-SERVICE-ARG>
+                <SW-SERVICE-ARG>
+                  <SHORT-NAME>info</SHORT-NAME>
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <DIRECTION>INOUT</DIRECTION>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR/DataTypes/PduInfoType</IMPLEMENTATION-DATA-TYPE-REF>
+                        <SW-IMPL-POLICY>CONST</SW-IMPL-POLICY>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </SW-SERVICE-ARG>
+                <SW-SERVICE-ARG>
+                  <SHORT-NAME>retry</SHORT-NAME>
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <DIRECTION>INOUT</DIRECTION>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR/DataTypes/RetryInfoType</IMPLEMENTATION-DATA-TYPE-REF>
+                        <SW-IMPL-POLICY>CONST</SW-IMPL-POLICY>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </SW-SERVICE-ARG>
+                <SW-SERVICE-ARG>
+                  <SHORT-NAME>availableDataPtr</SHORT-NAME>
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <DIRECTION>OUT</DIRECTION>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR/DataTypes/PduLengthType</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </SW-SERVICE-ARG>
+              </ARGUMENTS>
+            </BSW-MODULE-ENTRY>
+            <BSW-MODULE-ENTRY>
+              <SHORT-NAME>Dcm_TpTxConfirmation</SHORT-NAME>
+              <SERVICE-ID>72</SERVICE-ID>
+              <IS-REENTRANT>true</IS-REENTRANT>
+              <IS-SYNCHRONOUS>true</IS-SYNCHRONOUS>
+              <CALL-TYPE>CALLBACK</CALL-TYPE>
+              <EXECUTION-CONTEXT>UNSPECIFIED</EXECUTION-CONTEXT>
+              <SW-SERVICE-IMPL-POLICY>STANDARD</SW-SERVICE-IMPL-POLICY>
+              <ARGUMENTS>
+                <SW-SERVICE-ARG>
+                  <SHORT-NAME>id</SHORT-NAME>
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <DIRECTION>IN</DIRECTION>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR/DataTypes/PduIdType</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </SW-SERVICE-ARG>
+                <SW-SERVICE-ARG>
+                  <SHORT-NAME>result</SHORT-NAME>
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <DIRECTION>IN</DIRECTION>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR/DataTypes/Std_ReturnType</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </SW-SERVICE-ARG>
+              </ARGUMENTS>
+            </BSW-MODULE-ENTRY>
+            <BSW-MODULE-ENTRY>
+              <SHORT-NAME>Dcm_TxConfirmation</SHORT-NAME>
+              <SERVICE-ID>64</SERVICE-ID>
+              <IS-SYNCHRONOUS>true</IS-SYNCHRONOUS>
+              <CALL-TYPE>REGULAR</CALL-TYPE>
+              <EXECUTION-CONTEXT>UNSPECIFIED</EXECUTION-CONTEXT>
+              <SW-SERVICE-IMPL-POLICY>STANDARD</SW-SERVICE-IMPL-POLICY>
+              <ARGUMENTS>
+                <SW-SERVICE-ARG>
+                  <SHORT-NAME>id</SHORT-NAME>
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <DIRECTION>IN</DIRECTION>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR/DataTypes/PduIdType</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </SW-SERVICE-ARG>
+              </ARGUMENTS>
+            </BSW-MODULE-ENTRY>
+          </ELEMENTS>
+        </AR-PACKAGE>
+        <AR-PACKAGE>
+          <SHORT-NAME>DataTypes</SHORT-NAME>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

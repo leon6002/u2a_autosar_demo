@@ -1,0 +1,6 @@
+#!gbuild
+[Subproject]
+Gpt_TAUD_Ram.h
+Gpt_TAUD_PBTypes.h
+Gpt_TAUD_LLDriver.h
+Gpt_TAUD_Irq.h

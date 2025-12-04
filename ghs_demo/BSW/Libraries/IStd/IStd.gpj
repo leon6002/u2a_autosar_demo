@@ -1,0 +1,6 @@
+#!gbuild
+[Subproject]
+ilib_memheap.c
+ilib_mem.c
+istd_lib.h
+iLib_MemMap.h

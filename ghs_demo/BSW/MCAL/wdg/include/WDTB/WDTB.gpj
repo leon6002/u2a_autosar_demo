@@ -1,0 +1,5 @@
+#!gbuild
+[Subproject]
+Wdg_WDTB_PBTypes.h
+Wdg_WDTB_LLDriver.h
+Wdg_WDTB_Irq.h

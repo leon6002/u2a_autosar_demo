@@ -1,0 +1,11 @@
+#!gbuild
+[Subproject]
+general\general.gpj
+can\can.gpj
+fls\fls.gpj
+gpt\gpt.gpj
+mcu\mcu.gpj
+port\port.gpj
+wdg\wdg.gpj
+driver\driver.gpj
+lib\lib.gpj

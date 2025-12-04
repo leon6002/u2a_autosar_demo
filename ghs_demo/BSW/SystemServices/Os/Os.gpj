@@ -1,0 +1,5 @@
+#!gbuild
+[Subproject]
+Extend\Extend.gpj
+Kernel\Kernel.gpj
+Portable\Portable.gpj

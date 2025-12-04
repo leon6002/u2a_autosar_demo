@@ -1,0 +1,6 @@
+#!gbuild
+[Subproject]
+PDUR\PDUR.gpj
+NmIf\NmIf.gpj
+Dcm\Dcm.gpj
+Com\Com.gpj
