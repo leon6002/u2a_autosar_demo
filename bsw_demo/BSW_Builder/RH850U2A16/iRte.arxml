@@ -1224,7 +1224,7 @@
                 </ECUC-CONTAINER-VALUE>
               </SUB-CONTAINERS>
             </ECUC-CONTAINER-VALUE>
-            <ECUC-CONTAINER-VALUE UUID="d8f8c586-1e3e-4f03-8812-bbbc9a78caf1">
+            <ECUC-CONTAINER-VALUE UUID="306e53ef-c2f0-47a8-90ff-1b563037cd36">
               <SHORT-NAME>iSoft_Auto_ComXf_Imp_ComXf</SHORT-NAME>
               <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/iRte/RteBswModuleInstance</DEFINITION-REF>
               <REFERENCE-VALUES>
@@ -1234,7 +1234,7 @@
                 </ECUC-REFERENCE-VALUE>
               </REFERENCE-VALUES>
             </ECUC-CONTAINER-VALUE>
-            <ECUC-CONTAINER-VALUE UUID="3ea4edd8-1319-4146-a31f-9e1e8894a80c">
+            <ECUC-CONTAINER-VALUE UUID="84f10d4f-02c7-45b4-84a3-ea70a4751d93">
               <SHORT-NAME>iSoft_Auto_MemIf_Imp_MemIf</SHORT-NAME>
               <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/iRte/RteBswModuleInstance</DEFINITION-REF>
               <REFERENCE-VALUES>
@@ -1244,7 +1244,7 @@
                 </ECUC-REFERENCE-VALUE>
               </REFERENCE-VALUES>
             </ECUC-CONTAINER-VALUE>
-            <ECUC-CONTAINER-VALUE UUID="c7911d22-a352-47c3-9a0e-864229949268">
+            <ECUC-CONTAINER-VALUE UUID="b715cfcc-b877-4b52-bda9-367dff7bd373">
               <SHORT-NAME>iSoft_Auto_WdgIf_Imp_WdgIf</SHORT-NAME>
               <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/iRte/RteBswModuleInstance</DEFINITION-REF>
               <REFERENCE-VALUES>
