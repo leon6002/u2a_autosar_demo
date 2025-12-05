@@ -19,7 +19,7 @@
  *  @file               : CanIf_PBcfg.c
  *  @license            : Evaliation
  *  @licenseExpiryDate  : 2026-02-24 16:39:31
- *  @date               : 2025-12-04 23:30:58
+ *  @date               : 2025-12-05 15:40:50
  *  @customer           : EasyXMen User
  *  @toolVersion        : 2.2.0.1
  *********************************************************************************************************************/
@@ -159,6 +159,11 @@ static CONST(CanIfHthCfgType, CANIF_PBCFG_CONST) CanIf_HthCfgData[CANIF_HTH_NUMB
     {
         CANIF_CANDRV_0_CANIF_CTR_DRV_CanController_0,
         13u,
+        CANIF_FULL_CAN,
+    },
+    {
+        CANIF_CANDRV_0_CANIF_CTR_DRV_CanController_0,
+        14u,
         CANIF_FULL_CAN,
     },
 };
@@ -533,6 +538,24 @@ static CONST(CanIf_TxPduConfigType, CANIF_PBCFG_CONST) CanIf_TxPduConfigData[CAN
         0x304u,
         0x7ffu,
         CANIF_TX_STANDARD_CAN,
+        CANID_STATIC,
+    },
+    {
+        /* 10  CANIF_TXPDU_CAN0_Tx_0x18C4D2D0_Cyclic_Counter */
+
+        FALSE,
+        8u,
+
+        2u,
+        CANIF_HOH0_HTH_10,
+        PDUR_DESTPDU_CAN0_Tx_0x18C4D2D0_Cyclic_Counter,
+        CANIF_PDUID_TYPE_INVALID,
+
+        CANIF_PDUID_TYPE_INVALID,
+
+        0x18c4d2d0u,
+        0x1fffffffu,
+        CANIF_TX_EXTENDED_CAN,
         CANID_STATIC,
     },
 };

@@ -19,7 +19,7 @@
  *  @file               : CanIf_Cfg.h
  *  @license            : Evaliation
  *  @licenseExpiryDate  : 2026-02-24 16:39:31
- *  @date               : 2025-12-04 23:30:58
+ *  @date               : 2025-12-05 15:40:49
  *  @customer           : EasyXMen User
  *  @toolVersion        : 2.2.0.1
  *********************************************************************************************************************/
@@ -129,7 +129,7 @@
 
 #define CANIF_RX_EXTENDED_NO_FD_CAN_SUPPORT STD_OFF
 
-#define CANIF_TX_EXTENDED_CAN_SUPPORT STD_OFF
+#define CANIF_TX_EXTENDED_CAN_SUPPORT STD_ON
 
 #define CANIF_TX_EXTENDED_FD_CAN_SUPPORT STD_OFF
 
