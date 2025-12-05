@@ -151,6 +151,7 @@
 #define COM_UNUSED_UINT32    (0xFFFFFFFFu)
 #define COM_UNUSED_UINT64    (0xFFFFFFFFFFFFFFFFu)
 #define COM_NOUSED(paramter) (void)(paramter)
+#define COM_UNUSED(paramter) (void)(paramter)
 
 /* the initState for RxIPdu */
 #define Com_RX_ACTIVE_EN       0x1u
