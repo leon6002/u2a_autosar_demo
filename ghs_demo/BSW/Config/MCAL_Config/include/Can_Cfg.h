@@ -62,13 +62,13 @@
 **                      Input File                                                                                    **
 ***********************************************************************************************************************/
 /*
- * INPUT FILE:    D:\work\KHCG\2025\EasyXMen\2504\RH850U2A16\MCAL\Demo_U2A16_MCAL_ASR431_V430300_ConfigProject\Config\ECUC\Demo_U2A16_MCAL_ASR431_V430300_ConfigProject.ecuc.arxml
- *                D:\work\KHCG\2025\EasyXMen\2504\RH850U2A16\MCAL\Demo_U2A16_MCAL_ASR431_V430300_ConfigProject\X2x\modules\can\generator\U2A16\R431_CAN_U2A16_BSWMDT.arxml
- *                D:\work\KHCG\2025\EasyXMen\2504\RH850U2A16\MCAL\Demo_U2A16_MCAL_ASR431_V430300_ConfigProject\X2x\common\generic\stubs\4_3_1\Dem\xml\Dem_Can.arxml
- *                D:\work\KHCG\2025\EasyXMen\2504\RH850U2A16\MCAL\Demo_U2A16_MCAL_ASR431_V430300_ConfigProject\X2x\common\generic\stubs\4_3_1\EcuM\xml\EcuM_Can.arxml
- *                D:\work\KHCG\2025\EasyXMen\2504\RH850U2A16\MCAL\Demo_U2A16_MCAL_ASR431_V430300_ConfigProject\X2x\common\generic\stubs\4_3_1\Os\xml\Os_Can.arxml
- *                D:\work\KHCG\2025\EasyXMen\2504\RH850U2A16\MCAL\Demo_U2A16_MCAL_ASR431_V430300_ConfigProject\scripts\Sample_Application_U2Ax.trxml
- * GENERATED ON:  29 May 2025 - 16:22:00
+ * INPUT FILE:    D:\isoft\demo\mcal_demo\Config\ECUC\Demo_U2A16_MCAL_ASR431_V430300_ConfigProject.ecuc.arxml
+ *                D:\isoft\demo\mcal_demo\X2x\modules\can\generator\U2A16\R431_CAN_U2A16_BSWMDT.arxml
+ *                D:\isoft\demo\mcal_demo\X2x\common\generic\stubs\4_3_1\Dem\xml\Dem_Can.arxml
+ *                D:\isoft\demo\mcal_demo\X2x\common\generic\stubs\4_3_1\EcuM\xml\EcuM_Can.arxml
+ *                D:\isoft\demo\mcal_demo\X2x\common\generic\stubs\4_3_1\Os\xml\Os_Can.arxml
+ *                D:\isoft\demo\mcal_demo\scripts\Sample_Application_U2Ax.trxml
+ * GENERATED ON:  04 Dec 2025 - 22:24:42
  */
 
 
@@ -166,7 +166,7 @@
 #define CAN_OS_COUNTER_ID                                                       0
 
 /* Pre-compile option for Number of configured hardware object handles */
-#define CAN_NO_OF_HOHS                                                          13U
+#define CAN_NO_OF_HOHS                                                          14U
 
 /* Controller ID offset */
 #define CAN_CONTROLLER_OFFSET                                                   0U
@@ -355,6 +355,8 @@
 #define CanConf_CanHardwareObject_CanHardwareObject_CAN0_Tx_0x302_Mixed         (Can_HwHandleType)6                     /* PRQA S 0791 # JV-01 */
 #define CanConf_CanHardwareObject_CanHardwareObject_CAN0_Tx_0x303_Cyclic_Counter                                        /* PRQA S 0791 # JV-01 */ \
                                                                                 (Can_HwHandleType)7
+#define CanConf_CanHardwareObject_CanHardwareObject_CAN0_Tx_0x304_Cyclic_Counter                                        /* PRQA S 0791 # JV-01 */ \
+                                                                                (Can_HwHandleType)13
 #define CanConf_CanHardwareObject_CanHardwareObject_CAN0_Tx_0x350_Cyclic_PN17   (Can_HwHandleType)8                     /* PRQA S 0791 # JV-01 */
 #define CanConf_CanHardwareObject_CanHardwareObject_CAN0_Tx_0x351_Cyclic_PN29   (Can_HwHandleType)9                     /* PRQA S 0791 # JV-01 */
 #define CanConf_CanHardwareObject_CanHardwareObject_CAN0_Tx_0x360_E2E_P01       (Can_HwHandleType)10                    /* PRQA S 0791 # JV-01 */

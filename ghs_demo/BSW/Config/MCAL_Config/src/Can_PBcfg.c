@@ -62,13 +62,13 @@
 **                      Input File                                                                                    **
 ***********************************************************************************************************************/
 /*
- * INPUT FILE:    D:\work\KHCG\2025\EasyXMen\2504\RH850U2A16\MCAL\Demo_U2A16_MCAL_ASR431_V430300_ConfigProject\Config\ECUC\Demo_U2A16_MCAL_ASR431_V430300_ConfigProject.ecuc.arxml
- *                D:\work\KHCG\2025\EasyXMen\2504\RH850U2A16\MCAL\Demo_U2A16_MCAL_ASR431_V430300_ConfigProject\X2x\modules\can\generator\U2A16\R431_CAN_U2A16_BSWMDT.arxml
- *                D:\work\KHCG\2025\EasyXMen\2504\RH850U2A16\MCAL\Demo_U2A16_MCAL_ASR431_V430300_ConfigProject\X2x\common\generic\stubs\4_3_1\Dem\xml\Dem_Can.arxml
- *                D:\work\KHCG\2025\EasyXMen\2504\RH850U2A16\MCAL\Demo_U2A16_MCAL_ASR431_V430300_ConfigProject\X2x\common\generic\stubs\4_3_1\EcuM\xml\EcuM_Can.arxml
- *                D:\work\KHCG\2025\EasyXMen\2504\RH850U2A16\MCAL\Demo_U2A16_MCAL_ASR431_V430300_ConfigProject\X2x\common\generic\stubs\4_3_1\Os\xml\Os_Can.arxml
- *                D:\work\KHCG\2025\EasyXMen\2504\RH850U2A16\MCAL\Demo_U2A16_MCAL_ASR431_V430300_ConfigProject\scripts\Sample_Application_U2Ax.trxml
- * GENERATED ON:  29 May 2025 - 16:22:00
+ * INPUT FILE:    D:\isoft\demo\mcal_demo\Config\ECUC\Demo_U2A16_MCAL_ASR431_V430300_ConfigProject.ecuc.arxml
+ *                D:\isoft\demo\mcal_demo\X2x\modules\can\generator\U2A16\R431_CAN_U2A16_BSWMDT.arxml
+ *                D:\isoft\demo\mcal_demo\X2x\common\generic\stubs\4_3_1\Dem\xml\Dem_Can.arxml
+ *                D:\isoft\demo\mcal_demo\X2x\common\generic\stubs\4_3_1\EcuM\xml\EcuM_Can.arxml
+ *                D:\isoft\demo\mcal_demo\X2x\common\generic\stubs\4_3_1\Os\xml\Os_Can.arxml
+ *                D:\isoft\demo\mcal_demo\scripts\Sample_Application_U2Ax.trxml
+ * GENERATED ON:  04 Dec 2025 - 22:24:42
  */
 
 
@@ -171,7 +171,7 @@ static CONST(uint32, CAN_CONFIG_DATA) Can_GaaTMIEConfig00[] =
   0x00000000UL,
 
   /* Index 4 */
-  0x000001FFUL,
+  0x000003FFUL,
 
   /* Index 5 */
   0x00000000UL,
@@ -672,6 +672,38 @@ STATIC CONST(Can_HohConfigType, CAN_CONFIG_DATA) Can_GaaHohConfig0[] =
 
     /* blObjectUsesPolling */
     CAN_FALSE
+  },
+  /* Index: 13 - CanHardwareObject_CAN0_Tx_0x304_Cyclic_Counter -> TXBUFFER[137] */
+  {
+    /* enHoh */
+    CAN_HOH_HTH,
+
+    /* ucMainFunctionRIndex */
+    0U,
+
+    /* ucController */
+    0x00U,
+
+    /* ucTMDLC */
+    0x40U,
+
+    /* usHohId */
+    0x000DU,
+
+    /* enBufferType */
+    CAN_BUFFERTYPE_BUFFER,
+
+    /* usBufferIndex */
+    0x0089U,
+
+    /* ucPaddingValue */
+    0x00U,
+
+    /* ulXXCCRegValue */
+    0UL,
+
+    /* blObjectUsesPolling */
+    CAN_FALSE
   }
 };
 
@@ -839,7 +871,7 @@ CONST(Can_ConfigType, CAN_CONFIG_DATA) Can_GaaConfig[] =
     0x01U,
 
     /* usNoOfHohs */
-    0x000DU,
+    0x000EU,
 
     /* pHWUnitInfo */
     &Can_GaaHWUnitInfo0[0],                                                                                             /* PRQA S 0315 # JV-01 */
