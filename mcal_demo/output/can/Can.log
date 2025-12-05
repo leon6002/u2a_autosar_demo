@@ -1,6 +1,6 @@
 ########################################################################################################################
 # AUTOSAR Renesas R4.3.1 CAN Driver Generation Tool for X2x                   
-# Run time      = [04 Dec 2025 - 22:24:42]
+# Run time      = [05 Dec 2025 - 12:32:06]
 #    Command line arguments = D:\isoft\demo\mcal_demo\Config\ECUC\Demo_U2A16_MCAL_ASR431_V430300_ConfigProject.ecuc.arxml
 #	D:\isoft\demo\mcal_demo\X2x\modules\can\generator\U2A16\R431_CAN_U2A16_BSWMDT.arxml
 #	D:\isoft\demo\mcal_demo\X2x\common\generic\stubs\4_3_1\Dem\xml\Dem_Can.arxml
@@ -56,13 +56,13 @@ INF080016: The parameter 'CanHardwareObjectUsesPolling' in the RECEIVE
            D:\isoft\demo\mcal_demo\Config\ECUC\Demo_U2A16_MCAL_ASR431_V430300_ConfigProject.ecuc.arxml.  
            Container path: 
            /ActiveEcuC/Can/CanConfigSet0/CanHardwareObject_CAN0_Rx_COM. 
-INF000004: Opened file <output\can\include\Can_Cfg.h> at [04 Dec 2025 - 
-           22:24:42]. 
-INF000004: Opened file <output\can\src\Can_Lcfg.c> at [04 Dec 2025 - 
-           22:24:42]. 
-INF000004: Opened file <output\can\src\Can_PBcfg.c> at [04 Dec 2025 - 
-           22:24:42]. 
-INF000004: Opened file <output\can\Can.log> at [04 Dec 2025 - 22:24:42]. 
+INF000004: Opened file <output\can\include\Can_Cfg.h> at [05 Dec 2025 - 
+           12:32:06]. 
+INF000004: Opened file <output\can\src\Can_Lcfg.c> at [05 Dec 2025 - 
+           12:32:06]. 
+INF000004: Opened file <output\can\src\Can_PBcfg.c> at [05 Dec 2025 - 
+           12:32:06]. 
+INF000004: Opened file <output\can\Can.log> at [05 Dec 2025 - 12:32:06]. 
 INF000005: <0> Error(s) and <0> Warning(s) detected. 
 INF000006: Execution completed successfully. 
 

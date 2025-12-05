@@ -26,6 +26,34 @@
             <Setting Value="false" Name="nattable.ROW_HEADER.columnWidth.distributeRemainingSpace"/>
         </Settings>
         <Settings Name="com.vector.cfg.gui.danglingreference.view.DanglingReferencesView"/>
+        <Settings Name="com.vector.cfg.gui.gce.internal.GCETable.Renesas.EcucDefs_Can.Can.CanConfigSet.CanController">
+            <Setting Value="0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20," Name="nattable.BODY.columnIndexOrder"/>
+            <Setting Value="0" Name="nattable.BODY.columnWidth.defaultMinSize"/>
+            <Setting Value="false" Name="nattable.BODY.columnWidth.distributeRemainingSpace"/>
+            <Setting Value="0:20,1:144,2:138,3:155,4:174,5:201,6:109,7:185,8:150,9:170,10:198,11:227,12:150,13:218,14:116,15:227,16:115,17:184,18:149,19:150,20:134," Name="nattable.BODY.columnWidth.sizes"/>
+            <Setting Value="0" Name="nattable.COLUMN_HEADER.columnWidth.defaultMinSize"/>
+            <Setting Value="false" Name="nattable.COLUMN_HEADER.columnWidth.distributeRemainingSpace"/>
+            <Setting Value="0" Name="nattable.CORNER.columnWidth.defaultMinSize"/>
+            <Setting Value="false" Name="nattable.CORNER.columnWidth.distributeRemainingSpace"/>
+            <Setting Value="0" Name="nattable.ROW_HEADER.columnWidth.defaultMinSize"/>
+            <Setting Value="false" Name="nattable.ROW_HEADER.columnWidth.distributeRemainingSpace"/>
+            <Setting Value="ASC" Name="nattable.sortDirections"/>
+            <Setting Value="1" Name="nattable.sortIndexes"/>
+        </Settings>
+        <Settings Name="com.vector.cfg.gui.gce.internal.GCETable.Renesas.EcucDefs_Can.Can.CanConfigSet.CanController.CanControllerBaudrateConfig">
+            <Setting Value="0,1,2,3,4,5,6,7," Name="nattable.BODY.columnIndexOrder"/>
+            <Setting Value="0" Name="nattable.BODY.columnWidth.defaultMinSize"/>
+            <Setting Value="false" Name="nattable.BODY.columnWidth.distributeRemainingSpace"/>
+            <Setting Value="0:20,1:210,2:194,3:212,4:149,5:125,6:125,7:196," Name="nattable.BODY.columnWidth.sizes"/>
+            <Setting Value="0" Name="nattable.COLUMN_HEADER.columnWidth.defaultMinSize"/>
+            <Setting Value="false" Name="nattable.COLUMN_HEADER.columnWidth.distributeRemainingSpace"/>
+            <Setting Value="0" Name="nattable.CORNER.columnWidth.defaultMinSize"/>
+            <Setting Value="false" Name="nattable.CORNER.columnWidth.distributeRemainingSpace"/>
+            <Setting Value="0" Name="nattable.ROW_HEADER.columnWidth.defaultMinSize"/>
+            <Setting Value="false" Name="nattable.ROW_HEADER.columnWidth.distributeRemainingSpace"/>
+            <Setting Value="ASC" Name="nattable.sortDirections"/>
+            <Setting Value="1" Name="nattable.sortIndexes"/>
+        </Settings>
         <Settings Name="com.vector.cfg.gui.gce.internal.GCETable.Renesas.EcucDefs_Can.Can.CanConfigSet.CanHardwareObject">
             <Setting Value="0,1,2,3,4,5,6,7,8,9,10,11,12,13," Name="nattable.BODY.columnIndexOrder"/>
             <Setting Value="0" Name="nattable.BODY.columnWidth.defaultMinSize"/>
@@ -38,11 +66,25 @@
             <Setting Value="0" Name="nattable.ROW_HEADER.columnWidth.defaultMinSize"/>
             <Setting Value="false" Name="nattable.ROW_HEADER.columnWidth.distributeRemainingSpace"/>
             <Setting Value="ASC" Name="nattable.sortDirections"/>
+            <Setting Value="10" Name="nattable.sortIndexes"/>
+        </Settings>
+        <Settings Name="com.vector.cfg.gui.gce.internal.GCETable.Renesas.EcucDefs_Can.Can.CanGeneral.CanMainFunctionRWPeriods">
+            <Setting Value="0,1,2," Name="nattable.BODY.columnIndexOrder"/>
+            <Setting Value="0" Name="nattable.BODY.columnWidth.defaultMinSize"/>
+            <Setting Value="false" Name="nattable.BODY.columnWidth.distributeRemainingSpace"/>
+            <Setting Value="0:20,1:199,2:159," Name="nattable.BODY.columnWidth.sizes"/>
+            <Setting Value="0" Name="nattable.COLUMN_HEADER.columnWidth.defaultMinSize"/>
+            <Setting Value="false" Name="nattable.COLUMN_HEADER.columnWidth.distributeRemainingSpace"/>
+            <Setting Value="0" Name="nattable.CORNER.columnWidth.defaultMinSize"/>
+            <Setting Value="false" Name="nattable.CORNER.columnWidth.distributeRemainingSpace"/>
+            <Setting Value="0" Name="nattable.ROW_HEADER.columnWidth.defaultMinSize"/>
+            <Setting Value="false" Name="nattable.ROW_HEADER.columnWidth.distributeRemainingSpace"/>
+            <Setting Value="ASC" Name="nattable.sortDirections"/>
             <Setting Value="1" Name="nattable.sortIndexes"/>
         </Settings>
     </Settings>
     <Settings Name="com.vector.cfg.consistency.internal.executer.BackgroundValidationExecuter">
-        <Setting Value="1527" Name="InitialBackgroundValidationExecutionTimeMs"/>
-        <Setting Value="rO0ABXNyABFqYXZhLnV0aWwuSGFzaE1hcAUH2sHDFmDRAwACRgAKbG9hZEZhY3RvckkACXRocmVz&#xA;aG9sZHhwP0AAAAAAABh3CAAAACAAAAAXdAA+Y29tLnZlY3Rvci5jZmcudmFsaWRhdGlvbi5iYXNp&#xA;Y3J1bGVzLm1zci5pbXBsLkVudW1lcmF0aW9uVmFsdWVzcgAOamF2YS5sYW5nLkxvbmc7i+SQzI8j&#xA;3wIAAUoABXZhbHVleHIAEGphdmEubGFuZy5OdW1iZXKGrJUdC5TgiwIAAHhwAAAAACsAAAB0AD1j&#xA;b20udmVjdG9yLmNmZy52YWxpZGF0aW9uLmJhc2ljcnVsZXMubXNyLmltcGwuRGVmaW5pdGlvbkNo&#xA;ZWNrc3EAfgADAAAAADsAAAB0ADxjb20udmVjdG9yLmNmZy5kb20uYmFzZS51aS5kZXQudmFsaWRh&#xA;dGlvbi5EZXRBY3RpdmF0aW9uQ2hlY2tzcQB+AAMAAAAARwAAAHQAS2NvbS52ZWN0b3IuY2ZnLnZh&#xA;bGlkYXRpb24uYmFzaWNydWxlcy5tc3IuaW1wbC5udW1lcmljYWxjaGVjay5OdW1lcmljYWxDaGVj&#xA;a3NxAH4AAwAAAAAuAAAAdABLY29tLnZlY3Rvci5jZmcudmFsaWRhdGlvbi5iYXNpY3J1bGVzLm1z&#xA;ci5pbXBsLkJzd0ltcGxlbWVudGF0aW9uUmVmVmFsaWRhdG9yc3EAfgADAAAAAAkAAAB0AFJjb20u&#xA;dmVjdG9yLmNmZy52YWxpZGF0aW9uLmJhc2ljcnVsZXMubXNyLmltcGwubXVsdGlwbGljaXR5Lk11&#xA;bHRpcGxpY2l0eUNoZWNrTW9kdWxlc3EAfgADAAAAABEAAAB0AFVjb20udmVjdG9yLmNmZy52YWxp&#xA;ZGF0aW9uLmJhc2ljcnVsZXMubXNyLmltcGwubXVsdGlwbGljaXR5Lk11bHRpcGxpY2l0eUNoZWNr&#xA;Q29udGFpbmVyc3EAfgADAAAAABYAAAB0AD5jb20udmVjdG9yLmNmZy5kb20uaW8udWkudmFsaWRh&#xA;dGlvbnMuUG9ydC5Qb3J0TnVtYmVyT2ZQb3J0UGluc3NxAH4AAwAAAAAVAAAAdABoY29tLnZlY3Rv&#xA;ci5jZmcubW9kZWwuc2VydmljZXMuaW50ZXJuYWwuYnN3aW50YmVoYXZpb3IuZGF0YWRlc2MudmFs&#xA;aWRhdGlvbi5PYnNvbGV0ZU1jU3VwcG9ydERhdGFWYWxpZGF0b3JzcQB+AAMAAAAAMAAAAHQANmNv&#xA;bS52ZWN0b3IuY2ZnLmRvbS5iYXNlLnVpLmdwdC52YWxpZGF0aW9uLkdwdENoYW5uZWxJZHNxAH4A&#xA;AwAAAAAXAAAAdABMY29tLnZlY3Rvci5jZmcudmFsaWRhdGlvbi5iYXNpY3J1bGVzLm1zci5pbXBs&#xA;LnJlZmVyZW5jZWNoZWNrLlJlZmVyZW5jZUNoZWNrMnNxAH4AAwAAAAAbAAAAdABDY29tLnZlY3Rv&#xA;ci5jZmcudmFsaWRhdGlvbi5iYXNpY3J1bGVzLm1zci5pbXBsLlN0cmluZ1BhcmFtZXRlckxlbmd0&#xA;aHNxAH4AAwAAAAASAAAAdABKY29tLnZlY3Rvci5jZmcudmFsaWRhdGlvbi5iYXNpY3J1bGVzLm1z&#xA;ci5pbXBsLkNob2ljZUNvbnRhaW5lclNlbGVjdGlvblJ1bGVzcQB+AAMAAAAADwAAAHQAS2NvbS52&#xA;ZWN0b3IuY2ZnLnZhbGlkYXRpb24uYmFzaWNydWxlcy5tc3IuaW1wbC5iYXNldmFsdWVjaGVjay5C&#xA;YXNlVmFsdWVDaGVja3NxAH4AAwAAAAAiAAAAdABVY29tLnZlY3Rvci5jZmcudmFsaWRhdGlvbi5i&#xA;YXNpY3J1bGVzLm1zci5pbXBsLm11bHRpcGxpY2l0eS5NdWx0aXBsaWNpdHlDaGVja1BhcmFtZXRl&#xA;cnNxAH4AAwAAAAAjAAAAdAA9Y29tLnZlY3Rvci5jZmcudmFsaWRhdGlvbi5iYXNpY3J1bGVzLm1z&#xA;ci5pbXBsLlN0cmluZ1BhcmFtZXRlcnNxAH4AAwAAAAAQAAAAdAAzY29tLnZlY3Rvci5jZmcudmFs&#xA;aWRhdGlvbi5iYXNpY3J1bGVzLmltcGwuU2hvcnRuYW1lc3EAfgADAAAAAAUAAAB0ADpjb20udmVj&#xA;dG9yLmNmZy52YWxpZGF0aW9uLmJhc2ljcnVsZXMubXNyLmltcGwuTGlua2VyU3ltYm9sc3EAfgAD&#xA;AAAAABAAAAB0AFBjb20udmVjdG9yLmNmZy52YWxpZGF0aW9uLmJhc2ljcnVsZXMubXNyLmltcGwu&#xA;T3B0aW9uYWxTeW1ib2xpY05hbWVWYWx1ZVZhbGlkYXRvcnNxAH4AAwAAAAAbAAAAdAA/Y29tLnZl&#xA;Y3Rvci5jZmcudmFsaWRhdGlvbi5iYXNpY3J1bGVzLm1zci5pbXBsLk1vZHVsZVZhcmlhbnRFbnVt&#xA;c3EAfgADAAAAABwAAAB0ADZjb20udmVjdG9yLmNmZy5kb20ubWVtLnZhbGlkYXRpb25zLmZlZS5G&#xA;ZWVQb2xsaW5nQ2hlY2tzcQB+AAMAAAAADgAAAHQAQWNvbS52ZWN0b3IuY2ZnLmRvbS5ydW50aW1l&#xA;c3lzLnJ0ZXNldHVwLmludGVybmFsLkF1dG9tYXRpY1J0ZVNldHVwc3EAfgADAAAAAAIAAAB0AE9j&#xA;b20udmVjdG9yLmNmZy52YWxpZGF0aW9uLmJhc2ljcnVsZXMubXNyLmltcGwuVW5pcXVlU3ltYm9s&#xA;aWNOYW1lVmFsdWVWYWxpZGF0aW9uc3EAfgADAAAAACIAAAB4" Name="ValidationRuleExecutionTimes"/>
+        <Setting Value="1964" Name="InitialBackgroundValidationExecutionTimeMs"/>
+        <Setting Value="rO0ABXNyABFqYXZhLnV0aWwuSGFzaE1hcAUH2sHDFmDRAwACRgAKbG9hZEZhY3RvckkACXRocmVz&#xA;aG9sZHhwP0AAAAAAABh3CAAAACAAAAASdAA+Y29tLnZlY3Rvci5jZmcudmFsaWRhdGlvbi5iYXNp&#xA;Y3J1bGVzLm1zci5pbXBsLkVudW1lcmF0aW9uVmFsdWVzcgAOamF2YS5sYW5nLkxvbmc7i+SQzI8j&#xA;3wIAAUoABXZhbHVleHIAEGphdmEubGFuZy5OdW1iZXKGrJUdC5TgiwIAAHhwAAAAADoAAAB0AD1j&#xA;b20udmVjdG9yLmNmZy52YWxpZGF0aW9uLmJhc2ljcnVsZXMubXNyLmltcGwuRGVmaW5pdGlvbkNo&#xA;ZWNrc3EAfgADAAAAAEMAAAB0AEtjb20udmVjdG9yLmNmZy52YWxpZGF0aW9uLmJhc2ljcnVsZXMu&#xA;bXNyLmltcGwubnVtZXJpY2FsY2hlY2suTnVtZXJpY2FsQ2hlY2tzcQB+AAMAAAAAUQAAAHQAPGNv&#xA;bS52ZWN0b3IuY2ZnLmRvbS5iYXNlLnVpLmRldC52YWxpZGF0aW9uLkRldEFjdGl2YXRpb25DaGVj&#xA;a3NxAH4AAwAAAABZAAAAdABSY29tLnZlY3Rvci5jZmcudmFsaWRhdGlvbi5iYXNpY3J1bGVzLm1z&#xA;ci5pbXBsLm11bHRpcGxpY2l0eS5NdWx0aXBsaWNpdHlDaGVja01vZHVsZXNxAH4AAwAAAAABAAAA&#xA;dABVY29tLnZlY3Rvci5jZmcudmFsaWRhdGlvbi5iYXNpY3J1bGVzLm1zci5pbXBsLm11bHRpcGxp&#xA;Y2l0eS5NdWx0aXBsaWNpdHlDaGVja0NvbnRhaW5lcnNxAH4AAwAAAAAdAAAAdAA+Y29tLnZlY3Rv&#xA;ci5jZmcuZG9tLmlvLnVpLnZhbGlkYXRpb25zLlBvcnQuUG9ydE51bWJlck9mUG9ydFBpbnNzcQB+&#xA;AAMAAAAANwAAAHQANmNvbS52ZWN0b3IuY2ZnLmRvbS5iYXNlLnVpLmdwdC52YWxpZGF0aW9uLkdw&#xA;dENoYW5uZWxJZHNxAH4AAwAAAAA4AAAAdABMY29tLnZlY3Rvci5jZmcudmFsaWRhdGlvbi5iYXNp&#xA;Y3J1bGVzLm1zci5pbXBsLnJlZmVyZW5jZWNoZWNrLlJlZmVyZW5jZUNoZWNrMnNxAH4AAwAAAAA5&#xA;AAAAdABDY29tLnZlY3Rvci5jZmcudmFsaWRhdGlvbi5iYXNpY3J1bGVzLm1zci5pbXBsLlN0cmlu&#xA;Z1BhcmFtZXRlckxlbmd0aHNxAH4AAwAAAAACAAAAdABLY29tLnZlY3Rvci5jZmcudmFsaWRhdGlv&#xA;bi5iYXNpY3J1bGVzLm1zci5pbXBsLmJhc2V2YWx1ZWNoZWNrLkJhc2VWYWx1ZUNoZWNrc3EAfgAD&#xA;AAAAACAAAAB0AFVjb20udmVjdG9yLmNmZy52YWxpZGF0aW9uLmJhc2ljcnVsZXMubXNyLmltcGwu&#xA;bXVsdGlwbGljaXR5Lk11bHRpcGxpY2l0eUNoZWNrUGFyYW1ldGVyc3EAfgADAAAAADcAAAB0ADNj&#xA;b20udmVjdG9yLmNmZy52YWxpZGF0aW9uLmJhc2ljcnVsZXMuaW1wbC5TaG9ydG5hbWVzcQB+AAMA&#xA;AAAAAQAAAHQAOmNvbS52ZWN0b3IuY2ZnLnZhbGlkYXRpb24uYmFzaWNydWxlcy5tc3IuaW1wbC5M&#xA;aW5rZXJTeW1ib2xzcQB+AAMAAAAAAgAAAHQAUGNvbS52ZWN0b3IuY2ZnLnZhbGlkYXRpb24uYmFz&#xA;aWNydWxlcy5tc3IuaW1wbC5PcHRpb25hbFN5bWJvbGljTmFtZVZhbHVlVmFsaWRhdG9yc3EAfgAD&#xA;AAAAAB4AAAB0AD9jb20udmVjdG9yLmNmZy52YWxpZGF0aW9uLmJhc2ljcnVsZXMubXNyLmltcGwu&#xA;TW9kdWxlVmFyaWFudEVudW1zcQB+AAMAAAAACQAAAHQANmNvbS52ZWN0b3IuY2ZnLmRvbS5tZW0u&#xA;dmFsaWRhdGlvbnMuZmVlLkZlZVBvbGxpbmdDaGVja3NxAH4AAwAAAAACAAAAdABPY29tLnZlY3Rv&#xA;ci5jZmcudmFsaWRhdGlvbi5iYXNpY3J1bGVzLm1zci5pbXBsLlVuaXF1ZVN5bWJvbGljTmFtZVZh&#xA;bHVlVmFsaWRhdGlvbnNxAH4AAwAAAAA3AAAAeA==" Name="ValidationRuleExecutionTimes"/>
     </Settings>
 </Settings>
