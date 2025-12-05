@@ -19,7 +19,7 @@
  *  @file               : Com_PBcfg.h
  *  @license            : Evaliation
  *  @licenseExpiryDate  : 2026-02-24 16:39:31
- *  @date               : 2025-12-04 23:31:01
+ *  @date               : 2025-12-05 15:48:52
  *  @customer           : EasyXMen User
  *  @toolVersion        : 2.2.0.1
  *********************************************************************************************************************/
@@ -55,19 +55,19 @@
 *******************************************************************************/
 
 #define COM_RXIPDUBUFF_SIZE 62u
-#define COM_TXIPDUBUFF_SIZE 64u
+#define COM_TXIPDUBUFF_SIZE 72u
 
 #define COM_SIGNAL_BOOLBUFF_SIZE        6u
 #define COM_RXGROUPSIGNAL_BOOLBUFF_SIZE 1u
 #define COM_SIGNAL_BOOL_INVALID_SIZE    0u
 #define COM_SIGNAL_BOOL_SUBSTITUTE_SIZE 0u
 
-#define COM_SIGNAL_8BITBUFF_SIZE        50u
+#define COM_SIGNAL_8BITBUFF_SIZE        53u
 #define COM_RXGROUPSIGNAL_8BITBUFF_SIZE 8u
 #define COM_SIGNAL_8BIT_INVALID_SIZE    1u
 #define COM_SIGNAL_8BIT_SUBSTITUTE_SIZE 0u
 
-#define COM_SIGNAL_16BITBUFF_SIZE        15u
+#define COM_SIGNAL_16BITBUFF_SIZE        17u
 #define COM_RXGROUPSIGNAL_16BITBUFF_SIZE 1u
 #define COM_SIGNAL_16BIT_INVALID_SIZE    0u
 #define COM_SIGNAL_16BIT_SUBSTITUTE_SIZE 0u
@@ -213,7 +213,7 @@
 
 #define COM_GW_SRC_DSP_SIG_TYPE_UINT8_DYN_ENABLE STD_OFF
 
-#define COM_SIGNAL_SIGNED_TYPE_ENABLE STD_OFF
+#define COM_SIGNAL_SIGNED_TYPE_ENABLE STD_ON
 
 #define COM_TXIPDU_TIGGERTRANSMIT_CALLOUT_ENABLE STD_OFF
 

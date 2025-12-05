@@ -19,7 +19,7 @@
  *  @file               : Com_PBcfg.c
  *  @license            : Evaliation
  *  @licenseExpiryDate  : 2026-02-24 16:39:31
- *  @date               : 2025-12-04 23:31:01
+ *  @date               : 2025-12-05 15:48:52
  *  @customer           : EasyXMen User
  *  @toolVersion        : 2.2.0.1
  *********************************************************************************************************************/
@@ -55,10 +55,10 @@ VAR(uint8, COM_VAR) Com_TxIPduRuntimeBuff[COM_TXIPDUBUFF_SIZE];
 #include "Com_MemMap.h"
 CONST(uint8, COM_CONST_PBCFG)
 Com_TxIPduInitValue[COM_TXIPDUBUFF_SIZE] = {
-    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00};
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00};
 #define COM_STOP_SEC_PBCONFIG_DATA_8
 #include "Com_MemMap.h"
 
@@ -114,9 +114,9 @@ VAR(uint8, COM_VAR) Com_Signal8BitRuntimeBuff[COM_SIGNAL_8BITBUFF_SIZE];
 #include "Com_MemMap.h"
 CONST(uint8, COM_CONST_PBCFG)
 Com_Signal8BitInitValue[COM_SIGNAL_8BITBUFF_SIZE] = {
-    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00};
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00};
 #define COM_STOP_SEC_PBCONFIG_DATA_8
 #include "Com_MemMap.h"
 
@@ -130,7 +130,7 @@ VAR(uint16, COM_VAR) Com_Signal16BitRuntimeBuff[COM_SIGNAL_16BITBUFF_SIZE];
 #include "Com_MemMap.h"
 CONST(uint16, COM_CONST_PBCFG)
 Com_Signal16BitInitValue[COM_SIGNAL_16BITBUFF_SIZE] =
-    {0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0};
+    {0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0};
 #define COM_STOP_SEC_PBCONFIG_DATA_16
 #include "Com_MemMap.h"
 
@@ -397,6 +397,21 @@ Com_TxIPduInitState[COM_TXIPDU_NUMBER] = {
     },
     {
         /* IPDU_COM_CAN0_Tx_0x304_Cyclic_Counter*/
+        8u,
+
+        0u,
+        0u,
+        0u,
+        0u,
+        0u,
+        0u,
+
+        0u,
+        4u,
+        COM_TX_MODE_PERIODIC,
+    },
+    {
+        /* IPDU_COM_CAN0_Tx_0x18C4D2D0_Cyclic_Counter*/
         8u,
 
         0u,
@@ -757,6 +772,7 @@ Com_TxIPduGroupsRef[COM_TXIPDUGROUP_NUMBER] = {
     Com_TxPduGroup_CanController_0,
     Com_TxPduGroup_CanController_0,
     Com_TxPduGroup_CanController_0,
+    Com_TxPduGroup_CanController_0,
 };
 #define COM_STOP_SEC_PBCONFIG_DATA_16
 #include "Com_MemMap.h"
@@ -801,6 +817,12 @@ Com_TxModeTruePeriod[] = {
         10u,
     },
 
+    /* IPDU_COM_CAN0_Tx_0x18C4D2D0_Cyclic_Counter*/
+    {
+        6u,
+        10u,
+    },
+
 };
 
 CONST(Com_TxModeDirectRepetitionsType, COM_CONST)
@@ -840,6 +862,13 @@ Com_TxIPduCounter[COM_TXIPDU_COUNTER_NUMBER] = {
     {
         /* IPDU_COM_CAN0_Tx_0x304_Cyclic_Counter*/ NULL_PTR,
         8u,
+        4u,
+        15u,
+        15u,
+    },
+    {
+        /* IPDU_COM_CAN0_Tx_0x18C4D2D0_Cyclic_Counter*/ NULL_PTR,
+        52u,
         4u,
         15u,
         15u,
@@ -1128,6 +1157,41 @@ static CONST(Com_TxIPduType, COM_CONST_PBCFG) Com_TxIPdu[COM_TXIPDU_NUMBER] = {
         COM_CONFIRMATION,
 
         /* COM_TXPDU_COM_CAN0_Tx_0x304_Cyclic_Counter - 7 + IPDU_COM_CAN0_Tx_0x304_Cyclic_Counter */
+        COM_DEFERRED,
+        COM_PDU_NORMAL,
+    },
+    {
+        /* IPDU_COM_CAN0_Tx_0x18C4D2D0_Cyclic_Counter*/ &IPDU_COM_CAN0_Tx_0x18C4D2D0_Cylic_Callout, /* ComIPduCallout */
+
+        8u, /* ComIpduLength */
+        0u, /* ComMaxIpduLength */
+        0u, /*ComTimeout*/
+        0u, /*ComMinimumDelayTime*/
+
+        64u,                                               /*PduBufferId*/
+        PDUR_SRCPDU_COM_CAN0_Tx_0x18C4D2D0_Cyclic_Counter, /*PduId*/
+        6u,                                                /*ComTxModeTrue*/
+        COM_UNUSED_UINT16,                                 /*ComTxModeFalse*/
+        25u,                                               /*ComIpduSignalRefStartId*/
+        30u,
+
+        COM_UNUSED_TXSIGNALGROUPID,
+        0u,
+
+        8u, /*ComIPduGroupsRefStartId*/
+        9u,
+
+        2u, /*ComIPduCounter*/
+
+        COM_TX_MODE_PERIODIC, /*ComTxModeModeTrue*/
+        COM_TX_MODE_NONE,     /*ComTxModeModeFalse*/
+        0u,                   /*MetaDataItemLength*/
+
+        FALSE, /*ComIPduCancellationSupport*/
+
+        COM_CONFIRMATION,
+
+        /* COM_TXPDU_COM_CAN0_Tx_0x18C4D2D0_Cyclic_Counter - 8 + IPDU_COM_CAN0_Tx_0x18C4D2D0_Cyclic_Counter */
         COM_DEFERRED,
         COM_PDU_NORMAL,
     },
@@ -2300,6 +2364,121 @@ static CONST(Com_TxSignalType, COM_CONST_PBCFG) Com_TxSignal[COM_TXSIGNAL_NUMBER
         COM_PENDING,
 
     },
+    {
+        /* CAN0_Tx_0x18C4D2D0_Sig_5_U8_IPDU_COM_CAN0_Tx_0x18C4D2D0_Cyclic_Counter*/
+        44u, /*BufferId*/
+        0u,  /*ComSignalLength*/
+        0u,  /*ComSignalLength|ComSignalInitValue*/
+
+        7u, /*ComBitPosition*/
+
+        COM_UNUSED_SIGNALPOSITION, /*ComUpdateBitPosition*/
+        8u,                        /*TxPduId*/
+
+        0u, /*ComBitPosition*/
+        8u, /*ComBitSize*/
+        1u, /*ComBitSize & ComBitPosition*/
+
+        0u, /*ComUpdateBitPosition*/
+
+        FALSE,
+        COM_LITTLE_ENDIAN,
+        COM_UINT8,
+        COM_PENDING,
+
+    },
+    {
+        /* CAN0_Tx_0x18C4D2D0_Sig_4_U8_IPDU_COM_CAN0_Tx_0x18C4D2D0_Cyclic_Counter*/
+        43u, /*BufferId*/
+        0u,  /*ComSignalLength*/
+        0u,  /*ComSignalLength|ComSignalInitValue*/
+
+        4u, /*ComBitPosition*/
+
+        COM_UNUSED_SIGNALPOSITION, /*ComUpdateBitPosition*/
+        8u,                        /*TxPduId*/
+
+        4u, /*ComBitPosition*/
+        8u, /*ComBitSize*/
+        2u, /*ComBitSize & ComBitPosition*/
+
+        0u, /*ComUpdateBitPosition*/
+
+        FALSE,
+        COM_LITTLE_ENDIAN,
+        COM_UINT8,
+        COM_PENDING,
+
+    },
+    {
+        /* CAN0_Tx_0x18C4D2D0_Sig_3_U16_IPDU_COM_CAN0_Tx_0x18C4D2D0_Cyclic_Counter*/
+        15u, /*BufferId*/
+        0u,  /*ComSignalLength*/
+        0u,  /*ComSignalLength|ComSignalInitValue*/
+
+        2u, /*ComBitPosition*/
+
+        COM_UNUSED_SIGNALPOSITION, /*ComUpdateBitPosition*/
+        8u,                        /*TxPduId*/
+
+        4u,  /*ComBitPosition*/
+        16u, /*ComBitSize*/
+        3u,  /*ComBitSize & ComBitPosition*/
+
+        0u, /*ComUpdateBitPosition*/
+
+        FALSE,
+        COM_LITTLE_ENDIAN,
+        COM_SINT16,
+        COM_PENDING,
+
+    },
+    {
+        /* CAN0_Tx_0x18C4D2D0_Sig_2_U16_IPDU_COM_CAN0_Tx_0x18C4D2D0_Cyclic_Counter*/
+        14u, /*BufferId*/
+        0u,  /*ComSignalLength*/
+        0u,  /*ComSignalLength|ComSignalInitValue*/
+
+        0u, /*ComBitPosition*/
+
+        COM_UNUSED_SIGNALPOSITION, /*ComUpdateBitPosition*/
+        8u,                        /*TxPduId*/
+
+        4u,  /*ComBitPosition*/
+        16u, /*ComBitSize*/
+        3u,  /*ComBitSize & ComBitPosition*/
+
+        0u, /*ComUpdateBitPosition*/
+
+        FALSE,
+        COM_LITTLE_ENDIAN,
+        COM_UINT16,
+        COM_PENDING,
+
+    },
+    {
+        /* CAN0_Tx_0x18C4D2D0_Sig_1_U4_IPDU_COM_CAN0_Tx_0x18C4D2D0_Cyclic_Counter*/
+        42u, /*BufferId*/
+        0u,  /*ComSignalLength*/
+        0u,  /*ComSignalLength|ComSignalInitValue*/
+
+        0u, /*ComBitPosition*/
+
+        COM_UNUSED_SIGNALPOSITION, /*ComUpdateBitPosition*/
+        8u,                        /*TxPduId*/
+
+        0u, /*ComBitPosition*/
+        4u, /*ComBitSize*/
+        1u, /*ComBitSize & ComBitPosition*/
+
+        0u, /*ComUpdateBitPosition*/
+
+        FALSE,
+        COM_LITTLE_ENDIAN,
+        COM_UINT8,
+        COM_PENDING,
+
+    },
 };
 #define COM_STOP_SEC_PBCONFIG_DATA_UNSPECIFIED
 #include "Com_MemMap.h"
@@ -2521,7 +2700,7 @@ static CONST(Com_RxGroupSignalType, COM_CONST) Com_RxGroupSignal[COM_RXGROUPSIGN
 #include "Com_MemMap.h"
 static CONST(Com_TxGroupSignalType, COM_CONST) Com_TxGroupSignal[COM_TXGROUPSIGNAL_NUMBER] = {
     {/* CAN0_Tx_0x360_Sig_8_U8_IPDU_COM_CAN0_Tx_0x360_E2E_P01  Tx_0x360_E2E_P01_IPDU_COM_CAN0_Tx_0x360_E2E_P01*/
-     42u,
+     45u,
      0u,
      0u,
 
@@ -2537,7 +2716,7 @@ static CONST(Com_TxGroupSignalType, COM_CONST) Com_TxGroupSignal[COM_TXGROUPSIGN
 
      COM_GROUPSIGNAL_TMC_NONE},
     {/* CAN0_Tx_0x360_Sig_7_U5_IPDU_COM_CAN0_Tx_0x360_E2E_P01  Tx_0x360_E2E_P01_IPDU_COM_CAN0_Tx_0x360_E2E_P01*/
-     43u,
+     46u,
      0u,
      0u,
 
@@ -2553,7 +2732,7 @@ static CONST(Com_TxGroupSignalType, COM_CONST) Com_TxGroupSignal[COM_TXGROUPSIGN
 
      COM_GROUPSIGNAL_TMC_NONE},
     {/* CAN0_Tx_0x360_Sig_6_U2_IPDU_COM_CAN0_Tx_0x360_E2E_P01  Tx_0x360_E2E_P01_IPDU_COM_CAN0_Tx_0x360_E2E_P01*/
-     44u,
+     47u,
      0u,
      0u,
 
@@ -2569,7 +2748,7 @@ static CONST(Com_TxGroupSignalType, COM_CONST) Com_TxGroupSignal[COM_TXGROUPSIGN
 
      COM_GROUPSIGNAL_TMC_NONE},
     {/* CAN0_Tx_0x360_Sig_5_U16_IPDU_COM_CAN0_Tx_0x360_E2E_P01  Tx_0x360_E2E_P01_IPDU_COM_CAN0_Tx_0x360_E2E_P01*/
-     14u,
+     16u,
      0u,
      0u,
 
@@ -2585,7 +2764,7 @@ static CONST(Com_TxGroupSignalType, COM_CONST) Com_TxGroupSignal[COM_TXGROUPSIGN
 
      COM_GROUPSIGNAL_TMC_NONE},
     {/* CAN0_Tx_0x360_Sig_4_U8_IPDU_COM_CAN0_Tx_0x360_E2E_P01  Tx_0x360_E2E_P01_IPDU_COM_CAN0_Tx_0x360_E2E_P01*/
-     45u,
+     48u,
      0u,
      0u,
 
@@ -2601,7 +2780,7 @@ static CONST(Com_TxGroupSignalType, COM_CONST) Com_TxGroupSignal[COM_TXGROUPSIGN
 
      COM_GROUPSIGNAL_TMC_NONE},
     {/* CAN0_Tx_0x360_Sig_2_U3_IPDU_COM_CAN0_Tx_0x360_E2E_P01  Tx_0x360_E2E_P01_IPDU_COM_CAN0_Tx_0x360_E2E_P01*/
-     46u,
+     49u,
      0u,
      0u,
 
@@ -2617,7 +2796,7 @@ static CONST(Com_TxGroupSignalType, COM_CONST) Com_TxGroupSignal[COM_TXGROUPSIGN
 
      COM_GROUPSIGNAL_TMC_NONE},
     {/* CAN0_Tx_0x360_Sig_3_U4_IPDU_COM_CAN0_Tx_0x360_E2E_P01  Tx_0x360_E2E_P01_IPDU_COM_CAN0_Tx_0x360_E2E_P01*/
-     47u,
+     50u,
      0u,
      0u,
 
@@ -2649,7 +2828,7 @@ static CONST(Com_TxGroupSignalType, COM_CONST) Com_TxGroupSignal[COM_TXGROUPSIGN
 
      COM_GROUPSIGNAL_TMC_NONE},
     {/* CAN0_Tx_0x360_Counter_IPDU_COM_CAN0_Tx_0x360_E2E_P01  Tx_0x360_E2E_P01_IPDU_COM_CAN0_Tx_0x360_E2E_P01*/
-     48u,
+     51u,
      0u,
      0u,
 
@@ -2665,7 +2844,7 @@ static CONST(Com_TxGroupSignalType, COM_CONST) Com_TxGroupSignal[COM_TXGROUPSIGN
 
      COM_GROUPSIGNAL_TMC_NONE},
     {/* CAN0_Tx_0x360_CRC_IPDU_COM_CAN0_Tx_0x360_E2E_P01  Tx_0x360_E2E_P01_IPDU_COM_CAN0_Tx_0x360_E2E_P01*/
-     49u,
+     52u,
      0u,
      0u,
 
@@ -2693,7 +2872,7 @@ static const uint16 Com_MainFunctionRxRange[COM_NUMBER_OF_MAIN_FUNCTION_RX] = {
 
 static const uint16 Com_MainFunctionTxRange[COM_NUMBER_OF_MAIN_FUNCTION_TX] = {
 
-    8u,
+    9u,
 };
 #define COM_STOP_SEC_PBCONFIG_DATA_16
 #include "Com_MemMap.h"

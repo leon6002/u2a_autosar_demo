@@ -19,7 +19,7 @@
  *  @file               : Com_Callout.c
  *  @license            : Evaliation
  *  @licenseExpiryDate  : 2026-02-24 16:39:31
- *  @date               : 2025-12-04 23:31:02
+ *  @date               : 2025-12-05 15:48:52
  *  @customer           : EasyXMen User
  *  @toolVersion        : 2.2.0.1
  *********************************************************************************************************************/
@@ -88,6 +88,18 @@ boolean IPDU_COM_CAN0_Tx_0x304_Cylic_Callout(PduIdType PduId, PduInfoType* PduIn
      * <USERBLOCK IPDU_COM_CAN0_Tx_0x304_Cylic_Callout>
      */
     /* ComIPduCallout IPDU_COM_CAN0_Tx_0x304_Cylic_Callout code defined by User */
+    boolean ret = TRUE;
+    return ret;
+    /** DO NOT CHANGE THIS COMMENT!
+     * </USERBLOCK>
+     */
+}
+boolean IPDU_COM_CAN0_Tx_0x18C4D2D0_Cylic_Callout(PduIdType PduId, PduInfoType* PduInfoPtr)
+{
+    /** DO NOT CHANGE THIS COMMENT!
+     * <USERBLOCK IPDU_COM_CAN0_Tx_0x18C4D2D0_Cylic_Callout>
+     */
+    /* ComIPduCallout IPDU_COM_CAN0_Tx_0x18C4D2D0_Cylic_Callout code defined by User */
     boolean ret = TRUE;
     return ret;
     /** DO NOT CHANGE THIS COMMENT!
