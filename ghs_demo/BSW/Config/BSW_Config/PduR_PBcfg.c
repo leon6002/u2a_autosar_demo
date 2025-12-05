@@ -19,7 +19,7 @@
  *  @file               : PduR_PBcfg.c
  *  @license            : Evaliation
  *  @licenseExpiryDate  : 2026-02-24 16:39:31
- *  @date               : 2025-12-04 23:31:10
+ *  @date               : 2025-12-05 15:59:26
  *  @customer           : EasyXMen User
  *  @toolVersion        : 2.2.0.1
  *********************************************************************************************************************/
@@ -90,6 +90,8 @@ static CONST(PduIdType, PDUR_CONST) PduR_PduRSrcPduIdRef[] = {
     PDUR_SRCPDU_COM_CAN0_Tx_0x303_Cyclic_Counter, /*17-  PduRDestPdu_CAN0_Tx_0x303_Cyclic_Counter */
 
     PDUR_SRCPDU_COM_CAN0_Tx_0x304_Cyclic_Counter, /*18-  PduRDestPdu_CAN0_Tx_0x304_Cyclic_Counter */
+
+    PDUR_SRCPDU_COM_CAN0_Tx_0x18C4D2D0_Cyclic_Counter, /*19-  PduRDestPdu_CAN0_Tx_0x18C4D2D0_Cyclic_Counter */
 
 };
 #define PDUR_STOP_SEC_PBCONFIG_DATA_16
@@ -421,6 +423,23 @@ static CONST(PduRDestPduType, PDUR_CONST) PduR_DestPduConfigData[PDUR_DEST_PDU_S
         PDUR_DIRECT,
 
     },
+    {
+        /* 19 PDUR_DESTPDU_CAN0_Tx_0x18C4D2D0_Cyclic_Counter */
+        PDUR_CANIF,
+
+        TRUE,
+
+        1u,
+
+        &PduR_PduRSrcPduIdRef[19],
+
+        CANIF_TXPDU_CAN0_Tx_0x18C4D2D0_Cyclic_Counter,
+        8u,
+
+        PDUR_ROUTE_IF_TX_NOBUFFERED,
+        PDUR_DIRECT,
+
+    },
 };
 #define PDUR_STOP_SEC_PBCONFIG_DATA_UNSPECIFIED
 #include "PduR_MemMap.h"
@@ -561,13 +580,20 @@ static CONST(PduRSrcPduType, PDUR_CONST) PduR_SrcPduConfigData[PDUR_SRC_PDU_SUM]
 
         COM_TXPDU_COM_CAN0_Tx_0x304_Cyclic_Counter,
     },
+    {
+        /* 19 PDUR_SRCPDU_COM_CAN0_Tx_0x18C4D2D0_Cyclic_Counter */
+        TRUE,
+        PDUR_COM,
+
+        COM_TXPDU_COM_CAN0_Tx_0x18C4D2D0_Cyclic_Counter,
+    },
 };
 #define PDUR_STOP_SEC_PBCONFIG_DATA_UNSPECIFIED
 #include "PduR_MemMap.h"
 
 #define PDUR_START_SEC_PBCONFIG_DATA_16
 #include "PduR_MemMap.h"
-static CONST(PduIdType, PDUR_CONST) PduR_PduRDestPduIdRef[19] = {
+static CONST(PduIdType, PDUR_CONST) PduR_PduRDestPduIdRef[20] = {
     PDUR_DESTPDU_DCM_CAN0_Rx_0x708_Diag_Phy_Request,    /* PDUR_SRCPDU_CANTP_CAN0_Rx_0x708_Diag_Phy_Request */
     PDUR_DESTPDU_CANTP_CAN0_Tx_0x709_Diag_Phy_Response, /* PDUR_SRCPDU_DCM_CAN0_Tx_0x709_Diag_Phy_Response */
     PDUR_DESTPDU_DCM_CAN0_Rx_0x7df_Diag_Fun_Request,    /* PDUR_SRCPDU_CANTP_CAN0_Rx_0x7df_Diag_Fun_Request */
@@ -587,6 +613,7 @@ static CONST(PduIdType, PDUR_CONST) PduR_PduRDestPduIdRef[19] = {
     PDUR_DESTPDU_CAN0_Tx_0x302_Mixed,                   /* PDUR_SRCPDU_COM_CAN0_Tx_0x302_Mixed */
     PDUR_DESTPDU_CAN0_Tx_0x303_Cyclic_Counter,          /* PDUR_SRCPDU_COM_CAN0_Tx_0x303_Cyclic_Counter */
     PDUR_DESTPDU_CAN0_Tx_0x304_Cyclic_Counter,          /* PDUR_SRCPDU_COM_CAN0_Tx_0x304_Cyclic_Counter */
+    PDUR_DESTPDU_CAN0_Tx_0x18C4D2D0_Cyclic_Counter,     /* PDUR_SRCPDU_COM_CAN0_Tx_0x18C4D2D0_Cyclic_Counter */
 };
 #define PDUR_STOP_SEC_PBCONFIG_DATA_16
 #include "PduR_MemMap.h"
@@ -670,6 +697,10 @@ static CONST(PduRRoutingPathType, PDUR_CONST) PduR_RoutingPathConfigData0[PDUR_S
      1u,
      FALSE,
      &PduR_PduRDestPduIdRef[18]},
+    {/* 19 PDUR_SRCPDU_COM_CAN0_Tx_0x18C4D2D0_Cyclic_Counter */
+     1u,
+     FALSE,
+     &PduR_PduRDestPduIdRef[19]},
 };
 #define PDUR_STOP_SEC_PBCONFIG_DATA_UNSPECIFIED
 #include "PduR_MemMap.h"
@@ -689,8 +720,8 @@ PduR_PBConfigData =
     {
         0u,
         0u,
-        19u,
-        19u,
+        20u,
+        20u,
         NULL_PTR,
         PduR_RoutingTableConfigData,
         PduR_SrcPduConfigData,

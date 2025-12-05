@@ -19,7 +19,7 @@
  *  @file               : PduR_PBcfg.h
  *  @license            : Evaliation
  *  @licenseExpiryDate  : 2026-02-24 16:39:31
- *  @date               : 2025-12-04 23:31:10
+ *  @date               : 2025-12-05 15:59:26
  *  @customer           : EasyXMen User
  *  @toolVersion        : 2.2.0.1
  *********************************************************************************************************************/
@@ -44,29 +44,30 @@
 /*******************************************************************************
 **                      Macros                                                **
 *******************************************************************************/
-#define PDUR_SRC_PDU_SUM 19u
+#define PDUR_SRC_PDU_SUM 20u
 
-#define PDUR_SRCPDU_CANTP_CAN0_Rx_0x708_Diag_Phy_Request 0u
-#define PDUR_SRCPDU_DCM_CAN0_Tx_0x709_Diag_Phy_Response  1u
-#define PDUR_SRCPDU_CANTP_CAN0_Rx_0x7df_Diag_Fun_Request 2u
-#define PDUR_SRCPDU_CAN0_Rx_0x260_E2E_P01                3u
-#define PDUR_SRCPDU_CAN0_Rx_0x251_Cyclic_PN29            4u
-#define PDUR_SRCPDU_CAN0_Rx_0x250_Cyclic_PN17            5u
-#define PDUR_SRCPDU_CAN0_Rx_0x200_Cyclic                 6u
-#define PDUR_SRCPDU_CAN0_Rx_0x201_Event                  7u
-#define PDUR_SRCPDU_CAN0_Rx_0x202_Mixed                  8u
-#define PDUR_SRCPDU_CAN0_Rx_0x203_Cyclic_Counter         9u
-#define PDUR_SRCPDU_CANNM_CAN0_Rx_CanNmEiraRx            10u
-#define PDUR_SRCPDU_COM_CAN0_Tx_0x360_E2E_P01            11u
-#define PDUR_SRCPDU_COM_CAN0_Tx_0x351_Cyclic_PN29        12u
-#define PDUR_SRCPDU_COM_CAN0_Tx_0x350_Cyclic_PN17        13u
-#define PDUR_SRCPDU_COM_CAN0_Tx_0x300_Cyclic             14u
-#define PDUR_SRCPDU_COM_CAN0_Tx_0x301_Event              15u
-#define PDUR_SRCPDU_COM_CAN0_Tx_0x302_Mixed              16u
-#define PDUR_SRCPDU_COM_CAN0_Tx_0x303_Cyclic_Counter     17u
-#define PDUR_SRCPDU_COM_CAN0_Tx_0x304_Cyclic_Counter     18u
+#define PDUR_SRCPDU_CANTP_CAN0_Rx_0x708_Diag_Phy_Request  0u
+#define PDUR_SRCPDU_DCM_CAN0_Tx_0x709_Diag_Phy_Response   1u
+#define PDUR_SRCPDU_CANTP_CAN0_Rx_0x7df_Diag_Fun_Request  2u
+#define PDUR_SRCPDU_CAN0_Rx_0x260_E2E_P01                 3u
+#define PDUR_SRCPDU_CAN0_Rx_0x251_Cyclic_PN29             4u
+#define PDUR_SRCPDU_CAN0_Rx_0x250_Cyclic_PN17             5u
+#define PDUR_SRCPDU_CAN0_Rx_0x200_Cyclic                  6u
+#define PDUR_SRCPDU_CAN0_Rx_0x201_Event                   7u
+#define PDUR_SRCPDU_CAN0_Rx_0x202_Mixed                   8u
+#define PDUR_SRCPDU_CAN0_Rx_0x203_Cyclic_Counter          9u
+#define PDUR_SRCPDU_CANNM_CAN0_Rx_CanNmEiraRx             10u
+#define PDUR_SRCPDU_COM_CAN0_Tx_0x360_E2E_P01             11u
+#define PDUR_SRCPDU_COM_CAN0_Tx_0x351_Cyclic_PN29         12u
+#define PDUR_SRCPDU_COM_CAN0_Tx_0x350_Cyclic_PN17         13u
+#define PDUR_SRCPDU_COM_CAN0_Tx_0x300_Cyclic              14u
+#define PDUR_SRCPDU_COM_CAN0_Tx_0x301_Event               15u
+#define PDUR_SRCPDU_COM_CAN0_Tx_0x302_Mixed               16u
+#define PDUR_SRCPDU_COM_CAN0_Tx_0x303_Cyclic_Counter      17u
+#define PDUR_SRCPDU_COM_CAN0_Tx_0x304_Cyclic_Counter      18u
+#define PDUR_SRCPDU_COM_CAN0_Tx_0x18C4D2D0_Cyclic_Counter 19u
 
-#define PDUR_DEST_PDU_SUM 19u
+#define PDUR_DEST_PDU_SUM 20u
 
 #define PDUR_DESTPDU_DCM_CAN0_Rx_0x708_Diag_Phy_Request    0u
 #define PDUR_DESTPDU_CANTP_CAN0_Tx_0x709_Diag_Phy_Response 1u
@@ -87,6 +88,7 @@
 #define PDUR_DESTPDU_CAN0_Tx_0x302_Mixed                   16u
 #define PDUR_DESTPDU_CAN0_Tx_0x303_Cyclic_Counter          17u
 #define PDUR_DESTPDU_CAN0_Tx_0x304_Cyclic_Counter          18u
+#define PDUR_DESTPDU_CAN0_Tx_0x18C4D2D0_Cyclic_Counter     19u
 
 #define PDUR_ROUTING_PATH_GROUP_SUM 0u
 
