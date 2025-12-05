@@ -68,7 +68,7 @@
  *                D:\isoft\demo\mcal_demo\X2x\common\generic\stubs\4_3_1\EcuM\xml\EcuM_Can.arxml
  *                D:\isoft\demo\mcal_demo\X2x\common\generic\stubs\4_3_1\Os\xml\Os_Can.arxml
  *                D:\isoft\demo\mcal_demo\scripts\Sample_Application_U2Ax.trxml
- * GENERATED ON:  04 Dec 2025 - 22:24:42
+ * GENERATED ON:  05 Dec 2025 - 12:32:06
  */
 
 
@@ -171,7 +171,7 @@ static CONST(uint32, CAN_CONFIG_DATA) Can_GaaTMIEConfig00[] =
   0x00000000UL,
 
   /* Index 4 */
-  0x000003FFUL,
+  0x000007FFUL,
 
   /* Index 5 */
   0x00000000UL,
@@ -704,6 +704,38 @@ STATIC CONST(Can_HohConfigType, CAN_CONFIG_DATA) Can_GaaHohConfig0[] =
 
     /* blObjectUsesPolling */
     CAN_FALSE
+  },
+  /* Index: 14 - CanHardwareObject_CAN0_Tx_0x18C4D2D0_Cyclic_Counter -> TXBUFFER[138] */
+  {
+    /* enHoh */
+    CAN_HOH_HTH,
+
+    /* ucMainFunctionRIndex */
+    0U,
+
+    /* ucController */
+    0x00U,
+
+    /* ucTMDLC */
+    0x40U,
+
+    /* usHohId */
+    0x000EU,
+
+    /* enBufferType */
+    CAN_BUFFERTYPE_BUFFER,
+
+    /* usBufferIndex */
+    0x008AU,
+
+    /* ucPaddingValue */
+    0x00U,
+
+    /* ulXXCCRegValue */
+    0UL,
+
+    /* blObjectUsesPolling */
+    CAN_FALSE
   }
 };
 
@@ -871,7 +903,7 @@ CONST(Can_ConfigType, CAN_CONFIG_DATA) Can_GaaConfig[] =
     0x01U,
 
     /* usNoOfHohs */
-    0x000EU,
+    0x000FU,
 
     /* pHWUnitInfo */
     &Can_GaaHWUnitInfo0[0],                                                                                             /* PRQA S 0315 # JV-01 */

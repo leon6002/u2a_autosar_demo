@@ -68,7 +68,7 @@
  *                D:\isoft\demo\mcal_demo\X2x\common\generic\stubs\4_3_1\EcuM\xml\EcuM_Can.arxml
  *                D:\isoft\demo\mcal_demo\X2x\common\generic\stubs\4_3_1\Os\xml\Os_Can.arxml
  *                D:\isoft\demo\mcal_demo\scripts\Sample_Application_U2Ax.trxml
- * GENERATED ON:  04 Dec 2025 - 22:24:42
+ * GENERATED ON:  05 Dec 2025 - 12:32:06
  */
 
 
@@ -166,7 +166,7 @@
 #define CAN_OS_COUNTER_ID                                                       0
 
 /* Pre-compile option for Number of configured hardware object handles */
-#define CAN_NO_OF_HOHS                                                          14U
+#define CAN_NO_OF_HOHS                                                          15U
 
 /* Controller ID offset */
 #define CAN_CONTROLLER_OFFSET                                                   0U
@@ -350,6 +350,8 @@
 #define CanConf_CanHardwareObject_CanHardwareObject_CAN0_Rx_0x7df_Diag_Fun_Request                                      /* PRQA S 0791 # JV-01 */ \
                                                                                 (Can_HwHandleType)1
 #define CanConf_CanHardwareObject_CanHardwareObject_CAN0_Rx_COM                 (Can_HwHandleType)3                     /* PRQA S 0791 # JV-01 */
+#define CanConf_CanHardwareObject_CanHardwareObject_CAN0_Tx_0x18C4D2D0_Cyclic_Counter                                   /* PRQA S 0791 # JV-01 */ \
+                                                                                (Can_HwHandleType)14
 #define CanConf_CanHardwareObject_CanHardwareObject_CAN0_Tx_0x300_Cyclic        (Can_HwHandleType)4                     /* PRQA S 0791 # JV-01 */
 #define CanConf_CanHardwareObject_CanHardwareObject_CAN0_Tx_0x301_Event         (Can_HwHandleType)5                     /* PRQA S 0791 # JV-01 */
 #define CanConf_CanHardwareObject_CanHardwareObject_CAN0_Tx_0x302_Mixed         (Can_HwHandleType)6                     /* PRQA S 0791 # JV-01 */
